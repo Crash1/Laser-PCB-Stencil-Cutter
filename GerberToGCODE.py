@@ -1,3 +1,14 @@
+# This file processes gerber paste file and outputs gcode for laser cutting
+# Before using, edit 'User set variables'
+# Use http://simplegcoder.com/ to view output
+#
+# Code modified: October 2014
+# Changes:
+#       Can process large diptrace gerber files
+#       Uses M42 gcode so no changes are necessary in firmware
+#       Configurable Z height for homing and cutting
+#       Configurable cutting delay after laser start
+#
 #
 # Most of this code was taken from the pygerber2gcode project
 # on Google Code.
