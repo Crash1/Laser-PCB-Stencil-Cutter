@@ -23,6 +23,7 @@ GCODE_FILE = "TestStencil.gcode"
 CUT_SPEED = 50
 MOVE_SPEED = 5000
 LASER_CONTROL_PIN = 9
+ON_DELAY = 50           #millisecond
 gXSHIFT = 0
 gYSHIFT = 0
 
@@ -337,6 +338,7 @@ def path(move_speed, cut_speed,points):
 	if(gTMP_LASER != ON):
 		gTMP_LASER=ON
 		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S255 ; Laser On\n"
+		gGCODE_DATA += "G4 P" + str(ON_DELAY) + " ; Delay (milliseconds)\n"
 		CURRENT_SPEED = cut_speed
 		gGCODE_DATA +="G1 F" + str(CURRENT_SPEED) + "\n"
 		
