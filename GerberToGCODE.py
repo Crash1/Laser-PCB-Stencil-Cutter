@@ -20,8 +20,8 @@ GCODE_FILE = "TestStencil.gcode"
 #GCODE_FILE = "Stencils\\FTDI Breakout\\FTDI_top_stencil.gcode"
 
 # User set variables
-CUT_SPEED = 20
-MOVE_SPEED = 200
+CUT_SPEED = 50
+MOVE_SPEED = 5000
 gXSHIFT = 0
 gYSHIFT = 0
 
