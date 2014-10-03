@@ -22,6 +22,7 @@ GCODE_FILE = "TestStencil.gcode"
 # User set variables
 CUT_SPEED = 50
 MOVE_SPEED = 5000
+LASER_CONTROL_PIN = 9
 gXSHIFT = 0
 gYSHIFT = 0
 
@@ -335,7 +336,7 @@ def path(move_speed, cut_speed,points):
 	#move to cuting heght
 	if(gTMP_LASER != ON):
 		gTMP_LASER=ON
-		gGCODE_DATA += "M52" + "\n"
+		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S255 ; Laser On\n"
 		CURRENT_SPEED = cut_speed
 		gGCODE_DATA +="G1 F" + str(CURRENT_SPEED) + "\n"
 		
@@ -348,7 +349,7 @@ def path(move_speed, cut_speed,points):
 		
 	if(gTMP_LASER!=OFF):
 		gTMP_LASER = OFF
-		gGCODE_DATA += "M53" + "\n"
+		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 		gGCODE_DATA += "\n"
 		CURRENT_SPEED = move_speed
 		gGCODE_DATA +="G0 F" + str(CURRENT_SPEED) + "\n"
@@ -390,7 +391,7 @@ def gcode_end():
 	end_data = ""
 	
 	end_data += "\n;( End Code )\n"
-	end_data += "M53 ; turn off laser\n"
+	end_data += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 
 	end_data += "G28 ; home all axes\n"
 	end_data += "M84 ; disable motors\n"
