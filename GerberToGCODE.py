@@ -20,8 +20,11 @@ GCODE_FILE = "TestStencil.gcode"
 #GCODE_FILE = "Stencils\\FTDI Breakout\\FTDI_top_stencil.gcode"
 
 # User set variables
+START_Z_HEIGHT = 10     #lift z before homing
 CUT_SPEED = 50
 MOVE_SPEED = 5000
+Z_HEIGHT = 40           #millimeters
+Z_HEIGHT_SPEED = 200
 LASER_CONTROL_PIN = 9
 ON_DELAY = 50           #millisecond
 gXSHIFT = 0
@@ -384,8 +387,10 @@ def gcode_init():
 	else:
 		gGCODE_DATA += "G21 ; set units to millimeters\n"
 
+	gGCODE_DATA += "G1 Z" + str(START_Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; Lift Z before homing XY\n"
 	gGCODE_DATA += "G28 ; home all axes\n"
 	
+	gGCODE_DATA += "G1 Z" + str(Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; move to cutting height\n"
 	gGCODE_DATA += "\n\n" + ";(Start here)\n\n"
 
 def gcode_end():
