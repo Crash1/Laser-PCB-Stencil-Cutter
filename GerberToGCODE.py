@@ -41,6 +41,7 @@ ON_DELAY = 50           #millisecond
 gXSHIFT = 0
 gYSHIFT = 0
 
+
 ################################
 
 #Global Constant
@@ -352,7 +353,7 @@ def path(move_speed, cut_speed,points):
 	if(gTMP_LASER != ON):
 		gTMP_LASER=ON
 		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S255 ; Laser On\n"
-		gGCODE_DATA += "G4 P" + str(ON_DELAY) + " ; Delay (milliseconds)\n"
+		gGCODE_DATA += "G4 P" + str(ON_DELAY) + " ; Delay in milliseconds\n"
 		CURRENT_SPEED = cut_speed
 		gGCODE_DATA +="G1 F" + str(CURRENT_SPEED) + "\n"
 		
@@ -390,7 +391,7 @@ def get_date():
 def gcode_init():
 	global gGCODE_DATA, OUT_INCH_FLAG, MCODE_FLAG
 	gGCODE_DATA += "\n;( Generated on: " + get_date() +" )\n"
-	gGCODE_DATA += ";(Initialize)\n"
+	gGCODE_DATA += ";Initialize\n"
 	gGCODE_DATA += "G90 ; use absolute coordinates\n"
 	
 	if OUT_INCH_FLAG:
@@ -402,13 +403,13 @@ def gcode_init():
 	gGCODE_DATA += "G28 ; home all axes\n"
 	
 	gGCODE_DATA += "G1 Z" + str(Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; move to cutting height\n"
-	gGCODE_DATA += "\n\n" + ";(Start here)\n\n"
+	gGCODE_DATA += "\n\n" + ";Start here\n\n"
 
 def gcode_end():
 	global gGCODE_DATA, MCODE_FLAG
 	end_data = ""
 	
-	end_data += "\n;( End Code )\n"
+	end_data += "\n; End Code \n"
 	end_data += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 
 	end_data += "G28 ; home all axes\n"
@@ -451,4 +452,3 @@ if(len(gPOLYGONS) > 0):
 else:
 	print "No Polygons Found!"
 
-		
