@@ -94,6 +94,8 @@ def read_Gerber(filename):
 		gerber = f.readline()
 		if not gerber:
 			break
+		#print "------------------"
+		#print "Procesing line: " + gerber
 		if (find(gerber, "%MOIN") != -1):
 			IN_INCH_FLAG = 1
 
@@ -104,6 +106,8 @@ def read_Gerber(filename):
 		if (find(gerber, "D") == 0):
 			parse_d(gerber)
 		if (find(gerber, "X") == 0):
+			parse_xy(gerber)
+		if (find(gerber, "Y") == 0):    #diptrace can also only have y coordinates
 			parse_xy(gerber)
 	f.close()
 	gerber2polygon4draw()
@@ -151,17 +155,19 @@ def parse_xy(gerber):
 	global gTMP_X, gTMP_Y, gTMP_LASER, g54_FLAG, gFIG_NUM
 	d=0
 	xx = re.search("X([\d\.\-]+)\D",gerber)
-	yy = re.search("Y([\d\-]+)\D",gerber)
+	yy = re.search("Y([\d\.\-]+)\D",gerber)   #fix for diptrace
+	#yy = re.search("Y([\d\-]+)\D",gerber)
 	dd = re.search("D([\d]+)\D",gerber)
 	if (xx):
 		x = xx.group(1)
-		if (x != gTMP_X):
-			gTMP_X = x
-
+		gTMP_X = x
+	if not(xx):
+		x = gTMP_X    #fix for diptrace
 	if (yy):
 		y = yy.group(1)
-		if (y != gTMP_Y):
-			gTMP_Y = y
+		gTMP_Y = y
+	if not(yy):
+		y = gTMP_Y    #fix for diptrace
 	if (dd):
 		d = dd.group(1)
 
