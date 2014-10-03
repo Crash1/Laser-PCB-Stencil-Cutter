@@ -52,7 +52,7 @@ CURRENT_SPEED = 0
 
 gGERBER_TMP_X = 0
 gGERBER_TMP_Y = 0
-gDCODE = [0]*100
+gDCODE = [0]*1000     #2do use append
 g54_FLAG = 0
 gFIG_NUM = 0
 gPOLYGONS = []
