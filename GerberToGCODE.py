@@ -356,6 +356,7 @@ def path(move_speed, cut_speed,points):
 	#move to cuting heght
 	if(gTMP_LASER != ON):
 		gTMP_LASER=ON
+		gGCODE_DATA += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S255 ; Laser On\n"
 		gGCODE_DATA += "G4 P" + str(ON_DELAY) + " ; Delay in milliseconds\n"
 		CURRENT_SPEED = cut_speed
@@ -370,6 +371,7 @@ def path(move_speed, cut_speed,points):
 		
 	if(gTMP_LASER!=OFF):
 		gTMP_LASER = OFF
+		gGCODE_DATA += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 		gGCODE_DATA += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 		gGCODE_DATA += "\n"
 		CURRENT_SPEED = move_speed
@@ -407,6 +409,7 @@ def gcode_init():
 	gGCODE_DATA += "G28 ; home all axes\n"
 	
 	gGCODE_DATA += "G1 Z" + str(Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; move to cutting height\n"
+	gGCODE_DATA += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 	gGCODE_DATA += "\n\n" + ";Start here\n\n"
 
 def gcode_end():
@@ -414,6 +417,7 @@ def gcode_end():
 	end_data = ""
 	
 	end_data += "\n; End Code \n"
+	end_data += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 	end_data += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 
 	end_data += "G28 ; home all axes\n"
