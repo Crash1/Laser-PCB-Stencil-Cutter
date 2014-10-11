@@ -36,7 +36,8 @@ CUT_SPEED = 50
 MOVE_SPEED = 5000
 Z_HEIGHT = 40           #millimeters
 Z_HEIGHT_SPEED = 200
-LASER_CONTROL_PIN = 9
+LASER_POWER_PIN = 9
+LASER_CONTROL_PIN = 31
 ON_DELAY = 50           #millisecond
 gXSHIFT = 0
 gYSHIFT = 0
@@ -410,6 +411,7 @@ def gcode_init():
 	
 	gGCODE_DATA += "G1 Z" + str(Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; move to cutting height\n"
 	gGCODE_DATA += "G4 P1 ; Pause 1ms to force movement sychronization\n"
+	gGCODE_DATA += "M42 P" + str(LASER_POWER_PIN) + " S255 ; Energize Vreg\n"
 	gGCODE_DATA += "\n\n" + ";Start here\n\n"
 
 def gcode_end():
@@ -419,6 +421,7 @@ def gcode_end():
 	end_data += "\n; End Code \n"
 	end_data += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 	end_data += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
+	end_data += "M42 P" + str(LASER_POWER_PIN) + " S0 ; Un-Power Vreg\n"
 
 	end_data += "G28 ; home all axes\n"
 	end_data += "M84 ; disable motors\n"
