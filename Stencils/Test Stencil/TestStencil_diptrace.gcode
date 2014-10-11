@@ -1,3882 +1,2358 @@
 
-;( Generated on: 2014-10-03 17:33:28 )
+;( Generated on: 2014-10-11 17:21:26 )
 ;Initialize
 G90 ; use absolute coordinates
 G21 ; set units to millimeters
 G1 Z10 F200 ; Lift Z before homing XY
-G28 X0 Y0; home all axes
 G1 Z40 F200 ; move to cutting height
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P9 S255 ; Energize Vreg
 
 
 ;Start here
 
 G0 F5000
-G0 X39.522 Y17.589
-M42 P9 S255 ; Laser On
+G0 X17.352 Y21.760
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.522 Y17.589
-G1 X39.522 Y18.275
-G1 X40.589 Y18.275
-G1 X40.589 Y17.589
-G1 X39.522 Y17.589
-M42 P9 S0 ; laser off
+G1 X17.352 Y21.760
+G1 X17.352 Y22.111
+G1 X17.852 Y22.111
+G1 X17.852 Y21.760
+G1 X17.352 Y21.760
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.522 Y19.621
-M42 P9 S255 ; Laser On
+G0 X17.352 Y21.161
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.522 Y19.621
-G1 X39.522 Y20.307
-G1 X40.589 Y20.307
-G1 X40.589 Y19.621
-G1 X39.522 Y19.621
-M42 P9 S0 ; laser off
+G1 X17.352 Y21.161
+G1 X17.352 Y21.511
+G1 X17.852 Y21.511
+G1 X17.852 Y21.161
+G1 X17.352 Y21.161
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X47.574 Y17.945
-M42 P9 S255 ; Laser On
+G0 X39.933 Y21.618
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X47.574 Y17.945
-G1 X47.574 Y18.631
-G1 X48.641 Y18.631
-G1 X48.641 Y17.945
-G1 X47.574 Y17.945
-M42 P9 S0 ; laser off
+G1 X39.933 Y21.618
+G1 X39.933 Y21.968
+G1 X40.433 Y21.968
+G1 X40.433 Y21.618
+G1 X39.933 Y21.618
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X47.574 Y19.977
-M42 P9 S255 ; Laser On
+G0 X39.933 Y21.018
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X47.574 Y19.977
-G1 X47.574 Y20.663
-G1 X48.641 Y20.663
-G1 X48.641 Y19.977
-G1 X47.574 Y19.977
-M42 P9 S0 ; laser off
+G1 X39.933 Y21.018
+G1 X39.933 Y21.369
+G1 X40.433 Y21.369
+G1 X40.433 Y21.018
+G1 X39.933 Y21.018
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.866 Y16.281
-M42 P9 S255 ; Laser On
+G0 X40.771 Y21.151
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.866 Y16.281
-G1 X43.866 Y16.891
-G1 X44.425 Y16.891
-G1 X44.425 Y16.281
-G1 X43.866 Y16.281
-M42 P9 S0 ; laser off
+G1 X40.771 Y21.151
+G1 X40.771 Y21.501
+G1 X41.271 Y21.501
+G1 X41.271 Y21.151
+G1 X40.771 Y21.151
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.342 Y16.281
-M42 P9 S255 ; Laser On
+G0 X40.771 Y20.551
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.342 Y16.281
-G1 X42.342 Y16.891
-G1 X42.901 Y16.891
-G1 X42.901 Y16.281
-G1 X42.342 Y16.281
-M42 P9 S0 ; laser off
+G1 X40.771 Y20.551
+G1 X40.771 Y20.902
+G1 X41.271 Y20.902
+G1 X41.271 Y20.551
+G1 X40.771 Y20.551
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.949 Y19.507
-M42 P9 S255 ; Laser On
+G0 X27.943 Y22.305
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.949 Y19.507
-G1 X45.949 Y20.066
-G1 X46.558 Y20.066
-G1 X46.558 Y19.507
-G1 X45.949 Y19.507
-M42 P9 S0 ; laser off
+G1 X27.943 Y22.305
+G1 X27.943 Y22.805
+G1 X28.293 Y22.805
+G1 X28.293 Y22.305
+G1 X27.943 Y22.305
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.949 Y17.983
-M42 P9 S255 ; Laser On
+G0 X28.542 Y22.305
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.949 Y17.983
-G1 X45.949 Y18.542
-G1 X46.558 Y18.542
-G1 X46.558 Y17.983
-G1 X45.949 Y17.983
-M42 P9 S0 ; laser off
+G1 X28.542 Y22.305
+G1 X28.542 Y22.805
+G1 X28.892 Y22.805
+G1 X28.892 Y22.305
+G1 X28.542 Y22.305
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X30.433 Y27.460
-M42 P9 S255 ; Laser On
+G0 X41.308 Y18.896
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X30.433 Y27.460
-G1 X30.433 Y27.607
-G1 X30.730 Y27.607
-G1 X30.730 Y27.460
-G1 X30.433 Y27.460
-M42 P9 S0 ; laser off
+G1 X41.308 Y18.896
+G1 X41.308 Y19.397
+G1 X41.659 Y19.397
+G1 X41.659 Y18.896
+G1 X41.308 Y18.896
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X30.433 Y28.059
-M42 P9 S255 ; Laser On
+G0 X41.907 Y18.896
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X30.433 Y28.059
-G1 X30.433 Y28.207
-G1 X30.730 Y28.207
-G1 X30.730 Y28.059
-G1 X30.433 Y28.059
-M42 P9 S0 ; laser off
+G1 X41.907 Y18.896
+G1 X41.907 Y19.397
+G1 X42.258 Y19.397
+G1 X42.258 Y18.896
+G1 X41.907 Y18.896
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X22.380 Y27.766
-M42 P9 S255 ; Laser On
+G0 X41.558 Y21.694
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X22.380 Y27.766
-G1 X22.380 Y28.063
-G1 X22.527 Y28.063
-G1 X22.527 Y27.766
-G1 X22.380 Y27.766
-M42 P9 S0 ; laser off
+G1 X41.558 Y21.694
+G1 X41.558 Y22.045
+G1 X42.059 Y22.045
+G1 X42.059 Y21.694
+G1 X41.558 Y21.694
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X21.780 Y27.766
-M42 P9 S255 ; Laser On
+G0 X41.558 Y21.095
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X21.780 Y27.766
-G1 X21.780 Y28.063
-G1 X21.928 Y28.063
-G1 X21.928 Y27.766
-G1 X21.780 Y27.766
-M42 P9 S0 ; laser off
+G1 X41.558 Y21.095
+G1 X41.558 Y21.445
+G1 X42.059 Y21.445
+G1 X42.059 Y21.095
+G1 X41.558 Y21.095
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X21.670 Y19.637
-M42 P9 S255 ; Laser On
+G0 X24.362 Y15.903
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X21.670 Y19.637
-G1 X21.670 Y19.784
-G1 X21.967 Y19.784
-G1 X21.967 Y19.637
-G1 X21.670 Y19.637
-M42 P9 S0 ; laser off
+G1 X24.362 Y15.903
+G1 X24.362 Y16.253
+G1 X24.863 Y16.253
+G1 X24.863 Y15.903
+G1 X24.362 Y15.903
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X21.670 Y19.037
-M42 P9 S255 ; Laser On
+G0 X24.362 Y15.303
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X21.670 Y19.037
-G1 X21.670 Y19.185
-G1 X21.967 Y19.185
-G1 X21.967 Y19.037
-G1 X21.670 Y19.037
-M42 P9 S0 ; laser off
+G1 X24.362 Y15.303
+G1 X24.362 Y15.654
+G1 X24.863 Y15.654
+G1 X24.863 Y15.303
+G1 X24.362 Y15.303
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X30.127 Y19.155
-M42 P9 S255 ; Laser On
+G0 X19.586 Y19.155
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X30.127 Y19.155
-G1 X30.127 Y19.453
-G1 X30.274 Y19.453
-G1 X30.274 Y19.155
-G1 X30.127 Y19.155
-M42 P9 S0 ; laser off
+G1 X19.586 Y19.155
+G1 X19.586 Y19.656
+G1 X19.936 Y19.656
+G1 X19.936 Y19.155
+G1 X19.586 Y19.155
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X30.726 Y19.155
-M42 P9 S255 ; Laser On
+G0 X18.986 Y19.155
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X30.726 Y19.155
-G1 X30.726 Y19.453
-G1 X30.874 Y19.453
-G1 X30.874 Y19.155
-G1 X30.726 Y19.155
-M42 P9 S0 ; laser off
+G1 X18.986 Y19.155
+G1 X18.986 Y19.656
+G1 X19.337 Y19.656
+G1 X19.337 Y19.155
+G1 X18.986 Y19.155
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X49.839 Y51.844
-M42 P9 S255 ; Laser On
+G0 X23.194 Y15.903
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X49.839 Y51.844
-G1 X49.839 Y52.194
-G1 X50.339 Y52.194
-G1 X50.339 Y51.844
-G1 X49.839 Y51.844
-M42 P9 S0 ; laser off
+G1 X23.194 Y15.903
+G1 X23.194 Y16.253
+G1 X23.694 Y16.253
+G1 X23.694 Y15.903
+G1 X23.194 Y15.903
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X49.839 Y51.244
-M42 P9 S255 ; Laser On
+G0 X23.194 Y15.303
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X49.839 Y51.244
-G1 X49.839 Y51.595
-G1 X50.339 Y51.595
-G1 X50.339 Y51.244
-G1 X49.839 Y51.244
-M42 P9 S0 ; laser off
+G1 X23.194 Y15.303
+G1 X23.194 Y15.654
+G1 X23.694 Y15.654
+G1 X23.694 Y15.303
+G1 X23.194 Y15.303
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X50.677 Y51.377
-M42 P9 S255 ; Laser On
+G0 X19.535 Y21.137
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X50.677 Y51.377
-G1 X50.677 Y51.727
-G1 X51.177 Y51.727
-G1 X51.177 Y51.377
-G1 X50.677 Y51.377
-M42 P9 S0 ; laser off
+G1 X19.535 Y21.137
+G1 X19.535 Y21.637
+G1 X19.886 Y21.637
+G1 X19.886 Y21.137
+G1 X19.535 Y21.137
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X50.677 Y50.777
-M42 P9 S255 ; Laser On
+G0 X18.936 Y21.137
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X50.677 Y50.777
-G1 X50.677 Y51.128
-G1 X51.177 Y51.128
-G1 X51.177 Y50.777
-G1 X50.677 Y50.777
-M42 P9 S0 ; laser off
+G1 X18.936 Y21.137
+G1 X18.936 Y21.637
+G1 X19.286 Y21.637
+G1 X19.286 Y21.137
+G1 X18.936 Y21.137
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.849 Y52.531
-M42 P9 S255 ; Laser On
+G0 X24.134 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.849 Y52.531
-G1 X37.849 Y53.031
-G1 X38.199 Y53.031
-G1 X38.199 Y52.531
-G1 X37.849 Y52.531
-M42 P9 S0 ; laser off
+G1 X24.134 Y23.294
+G1 X24.134 Y23.645
+G1 X24.634 Y23.645
+G1 X24.634 Y23.294
+G1 X24.134 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.448 Y52.531
-M42 P9 S255 ; Laser On
+G0 X24.134 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.448 Y52.531
-G1 X38.448 Y53.031
-G1 X38.798 Y53.031
-G1 X38.798 Y52.531
-G1 X38.448 Y52.531
-M42 P9 S0 ; laser off
+G1 X24.134 Y23.894
+G1 X24.134 Y24.244
+G1 X24.634 Y24.244
+G1 X24.634 Y23.894
+G1 X24.134 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X51.214 Y49.122
-M42 P9 S255 ; Laser On
+G0 X25.734 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X51.214 Y49.122
-G1 X51.214 Y49.623
-G1 X51.565 Y49.623
-G1 X51.565 Y49.122
-G1 X51.214 Y49.122
-M42 P9 S0 ; laser off
+G1 X25.734 Y23.294
+G1 X25.734 Y23.645
+G1 X26.234 Y23.645
+G1 X26.234 Y23.294
+G1 X25.734 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X51.813 Y49.122
-M42 P9 S255 ; Laser On
+G0 X25.734 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X51.813 Y49.122
-G1 X51.813 Y49.623
-G1 X52.164 Y49.623
-G1 X52.164 Y49.122
-G1 X51.813 Y49.122
-M42 P9 S0 ; laser off
+G1 X25.734 Y23.894
+G1 X25.734 Y24.244
+G1 X26.234 Y24.244
+G1 X26.234 Y23.894
+G1 X25.734 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X51.464 Y51.920
-M42 P9 S255 ; Laser On
+G0 X22.965 Y23.498
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X51.464 Y51.920
-G1 X51.464 Y52.271
-G1 X51.965 Y52.271
-G1 X51.965 Y51.920
-G1 X51.464 Y51.920
-M42 P9 S0 ; laser off
+G1 X22.965 Y23.498
+G1 X22.965 Y23.848
+G1 X23.466 Y23.848
+G1 X23.466 Y23.498
+G1 X22.965 Y23.498
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X51.464 Y51.321
-M42 P9 S255 ; Laser On
+G0 X22.965 Y24.097
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X51.464 Y51.321
-G1 X51.464 Y51.671
-G1 X51.965 Y51.671
-G1 X51.965 Y51.321
-G1 X51.464 Y51.321
-M42 P9 S0 ; laser off
+G1 X22.965 Y24.097
+G1 X22.965 Y24.447
+G1 X23.466 Y24.447
+G1 X23.466 Y24.097
+G1 X22.965 Y24.097
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.268 Y46.129
-M42 P9 S255 ; Laser On
+G0 X24.947 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.268 Y46.129
-G1 X34.268 Y46.479
-G1 X34.769 Y46.479
-G1 X34.769 Y46.129
-G1 X34.268 Y46.129
-M42 P9 S0 ; laser off
+G1 X24.947 Y23.294
+G1 X24.947 Y23.645
+G1 X25.447 Y23.645
+G1 X25.447 Y23.294
+G1 X24.947 Y23.294
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.268 Y45.529
-M42 P9 S255 ; Laser On
+G0 X24.947 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.268 Y45.529
-G1 X34.268 Y45.880
-G1 X34.769 Y45.880
-G1 X34.769 Y45.529
-G1 X34.268 Y45.529
-M42 P9 S0 ; laser off
+G1 X24.947 Y23.894
+G1 X24.947 Y24.244
+G1 X25.447 Y24.244
+G1 X25.447 Y23.894
+G1 X24.947 Y23.894
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X29.492 Y49.381
-M42 P9 S255 ; Laser On
+G0 X27.943 Y21.467
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X29.492 Y49.381
-G1 X29.492 Y49.882
-G1 X29.842 Y49.882
-G1 X29.842 Y49.381
-G1 X29.492 Y49.381
-M42 P9 S0 ; laser off
+G1 X27.943 Y21.467
+G1 X27.943 Y21.967
+G1 X28.293 Y21.967
+G1 X28.293 Y21.467
+G1 X27.943 Y21.467
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.892 Y49.381
-M42 P9 S255 ; Laser On
+G0 X28.542 Y21.467
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.892 Y49.381
-G1 X28.892 Y49.882
-G1 X29.243 Y49.882
-G1 X29.243 Y49.381
-G1 X28.892 Y49.381
-M42 P9 S0 ; laser off
+G1 X28.542 Y21.467
+G1 X28.542 Y21.967
+G1 X28.892 Y21.967
+G1 X28.892 Y21.467
+G1 X28.542 Y21.467
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X33.100 Y46.129
-M42 P9 S255 ; Laser On
+G0 X18.139 Y17.605
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X33.100 Y46.129
-G1 X33.100 Y46.479
-G1 X33.600 Y46.479
-G1 X33.600 Y46.129
-G1 X33.100 Y46.129
-M42 P9 S0 ; laser off
+G1 X18.139 Y17.605
+G1 X18.139 Y17.955
+G1 X18.640 Y17.955
+G1 X18.640 Y17.605
+G1 X18.139 Y17.605
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X33.100 Y45.529
-M42 P9 S255 ; Laser On
+G0 X18.139 Y17.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X33.100 Y45.529
-G1 X33.100 Y45.880
-G1 X33.600 Y45.880
-G1 X33.600 Y45.529
-G1 X33.100 Y45.529
-M42 P9 S0 ; laser off
+G1 X18.139 Y17.005
+G1 X18.139 Y17.356
+G1 X18.640 Y17.356
+G1 X18.640 Y17.005
+G1 X18.139 Y17.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X29.441 Y51.363
-M42 P9 S255 ; Laser On
+G0 X26.979 Y22.990
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X29.441 Y51.363
-G1 X29.441 Y51.863
-G1 X29.792 Y51.863
-G1 X29.792 Y51.363
-G1 X29.441 Y51.363
-M42 P9 S0 ; laser off
+G1 X26.979 Y22.990
+G1 X26.979 Y23.340
+G1 X27.479 Y23.340
+G1 X27.479 Y22.990
+G1 X26.979 Y22.990
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.842 Y51.363
-M42 P9 S255 ; Laser On
+G0 X26.979 Y22.390
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.842 Y51.363
-G1 X28.842 Y51.863
-G1 X29.192 Y51.863
-G1 X29.192 Y51.363
-G1 X28.842 Y51.363
-M42 P9 S0 ; laser off
+G1 X26.979 Y22.390
+G1 X26.979 Y22.741
+G1 X27.479 Y22.741
+G1 X27.479 Y22.390
+G1 X26.979 Y22.390
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.040 Y53.520
-M42 P9 S255 ; Laser On
+G0 X27.841 Y20.629
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.040 Y53.520
-G1 X34.040 Y53.871
-G1 X34.540 Y53.871
-G1 X34.540 Y53.520
-G1 X34.040 Y53.520
-M42 P9 S0 ; laser off
+G1 X27.841 Y20.629
+G1 X27.841 Y21.129
+G1 X28.191 Y21.129
+G1 X28.191 Y20.629
+G1 X27.841 Y20.629
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.040 Y54.120
-M42 P9 S255 ; Laser On
+G0 X28.440 Y20.629
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.040 Y54.120
-G1 X34.040 Y54.470
-G1 X34.540 Y54.470
-G1 X34.540 Y54.120
-G1 X34.040 Y54.120
-M42 P9 S0 ; laser off
+G1 X28.440 Y20.629
+G1 X28.440 Y21.129
+G1 X28.791 Y21.129
+G1 X28.791 Y20.629
+G1 X28.440 Y20.629
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X35.640 Y53.520
-M42 P9 S255 ; Laser On
+G0 X28.578 Y19.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X35.640 Y53.520
-G1 X35.640 Y53.871
-G1 X36.140 Y53.871
-G1 X36.140 Y53.520
-G1 X35.640 Y53.520
-M42 P9 S0 ; laser off
+G1 X28.578 Y19.054
+G1 X28.578 Y19.554
+G1 X28.928 Y19.554
+G1 X28.928 Y19.054
+G1 X28.578 Y19.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X35.640 Y54.120
-M42 P9 S255 ; Laser On
+G0 X29.177 Y19.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X35.640 Y54.120
-G1 X35.640 Y54.470
-G1 X36.140 Y54.470
-G1 X36.140 Y54.120
-G1 X35.640 Y54.120
-M42 P9 S0 ; laser off
+G1 X29.177 Y19.054
+G1 X29.177 Y19.554
+G1 X29.527 Y19.554
+G1 X29.527 Y19.054
+G1 X29.177 Y19.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X32.871 Y53.724
-M42 P9 S255 ; Laser On
+G0 X29.138 Y14.735
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X32.871 Y53.724
-G1 X32.871 Y54.074
-G1 X33.372 Y54.074
-G1 X33.372 Y53.724
-G1 X32.871 Y53.724
-M42 P9 S0 ; laser off
+G1 X29.138 Y14.735
+G1 X29.138 Y15.085
+G1 X29.638 Y15.085
+G1 X29.638 Y14.735
+G1 X29.138 Y14.735
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X32.871 Y54.323
-M42 P9 S255 ; Laser On
+G0 X29.138 Y14.135
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X32.871 Y54.323
-G1 X32.871 Y54.673
-G1 X33.372 Y54.673
-G1 X33.372 Y54.323
-G1 X32.871 Y54.323
-M42 P9 S0 ; laser off
+G1 X29.138 Y14.135
+G1 X29.138 Y14.486
+G1 X29.638 Y14.486
+G1 X29.638 Y14.135
+G1 X29.138 Y14.135
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.853 Y53.520
-M42 P9 S255 ; Laser On
+G0 X28.782 Y16.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.853 Y53.520
-G1 X34.853 Y53.871
-G1 X35.353 Y53.871
-G1 X35.353 Y53.520
-G1 X34.853 Y53.520
-M42 P9 S0 ; laser off
+G1 X28.782 Y16.005
+G1 X28.782 Y16.355
+G1 X29.282 Y16.355
+G1 X29.282 Y16.005
+G1 X28.782 Y16.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X34.853 Y54.120
-M42 P9 S255 ; Laser On
+G0 X28.782 Y15.405
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X34.853 Y54.120
-G1 X34.853 Y54.470
-G1 X35.353 Y54.470
-G1 X35.353 Y54.120
-G1 X34.853 Y54.120
-M42 P9 S0 ; laser off
+G1 X28.782 Y15.405
+G1 X28.782 Y15.756
+G1 X29.282 Y15.756
+G1 X29.282 Y15.405
+G1 X28.782 Y15.405
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.849 Y51.693
-M42 P9 S255 ; Laser On
+G0 X27.913 Y17.269
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.849 Y51.693
-G1 X37.849 Y52.193
-G1 X38.199 Y52.193
-G1 X38.199 Y51.693
-G1 X37.849 Y51.693
-M42 P9 S0 ; laser off
+G1 X27.913 Y17.269
+G1 X27.913 Y17.620
+G1 X28.414 Y17.620
+G1 X28.414 Y17.269
+G1 X27.913 Y17.269
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.448 Y51.693
-M42 P9 S255 ; Laser On
+G0 X27.913 Y16.670
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.448 Y51.693
-G1 X38.448 Y52.193
-G1 X38.798 Y52.193
-G1 X38.798 Y51.693
-G1 X38.448 Y51.693
-M42 P9 S0 ; laser off
+G1 X27.913 Y16.670
+G1 X27.913 Y17.021
+G1 X28.414 Y17.021
+G1 X28.414 Y16.670
+G1 X27.913 Y16.670
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.045 Y47.831
-M42 P9 S255 ; Laser On
+G0 X27.004 Y15.293
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.045 Y47.831
-G1 X28.045 Y48.181
-G1 X28.546 Y48.181
-G1 X28.546 Y47.831
-G1 X28.045 Y47.831
-M42 P9 S0 ; laser off
+G1 X27.004 Y15.293
+G1 X27.004 Y15.644
+G1 X27.504 Y15.644
+G1 X27.504 Y15.293
+G1 X27.004 Y15.293
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.045 Y47.231
-M42 P9 S255 ; Laser On
+G0 X27.004 Y15.893
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.045 Y47.231
-G1 X28.045 Y47.582
-G1 X28.546 Y47.582
-G1 X28.546 Y47.231
-G1 X28.045 Y47.231
-M42 P9 S0 ; laser off
+G1 X27.004 Y15.893
+G1 X27.004 Y16.243
+G1 X27.504 Y16.243
+G1 X27.504 Y15.893
+G1 X27.004 Y15.893
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.885 Y53.216
-M42 P9 S255 ; Laser On
+G0 X26.217 Y15.293
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.885 Y53.216
-G1 X36.885 Y53.566
-G1 X37.385 Y53.566
-G1 X37.385 Y53.216
-G1 X36.885 Y53.216
-M42 P9 S0 ; laser off
+G1 X26.217 Y15.293
+G1 X26.217 Y15.644
+G1 X26.717 Y15.644
+G1 X26.717 Y15.293
+G1 X26.217 Y15.293
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.885 Y52.616
-M42 P9 S255 ; Laser On
+G0 X26.217 Y15.893
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.885 Y52.616
-G1 X36.885 Y52.967
-G1 X37.385 Y52.967
-G1 X37.385 Y52.616
-G1 X36.885 Y52.616
-M42 P9 S0 ; laser off
+G1 X26.217 Y15.893
+G1 X26.217 Y16.243
+G1 X26.717 Y16.243
+G1 X26.717 Y15.893
+G1 X26.217 Y15.893
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.747 Y50.855
-M42 P9 S255 ; Laser On
+G0 X30.204 Y14.150
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.747 Y50.855
-G1 X37.747 Y51.355
-G1 X38.097 Y51.355
-G1 X38.097 Y50.855
-G1 X37.747 Y50.855
-M42 P9 S0 ; laser off
+G1 X30.204 Y14.150
+G1 X30.204 Y14.501
+G1 X30.705 Y14.501
+G1 X30.705 Y14.150
+G1 X30.204 Y14.150
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.346 Y50.855
-M42 P9 S255 ; Laser On
+G0 X30.204 Y14.750
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.346 Y50.855
-G1 X38.346 Y51.355
-G1 X38.697 Y51.355
-G1 X38.697 Y50.855
-G1 X38.346 Y50.855
-M42 P9 S0 ; laser off
+G1 X30.204 Y14.750
+G1 X30.204 Y15.100
+G1 X30.705 Y15.100
+G1 X30.705 Y14.750
+G1 X30.204 Y14.750
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.484 Y49.280
-M42 P9 S255 ; Laser On
+G0 X34.949 Y14.475
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.484 Y49.280
-G1 X38.484 Y49.780
-G1 X38.834 Y49.780
-G1 X38.834 Y49.280
-G1 X38.484 Y49.280
-M42 P9 S0 ; laser off
+G1 X34.949 Y14.475
+G1 X34.949 Y14.826
+G1 X35.450 Y14.826
+G1 X35.450 Y14.475
+G1 X34.949 Y14.475
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.083 Y49.280
-M42 P9 S255 ; Laser On
+G0 X34.949 Y13.876
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.083 Y49.280
-G1 X39.083 Y49.780
-G1 X39.433 Y49.780
-G1 X39.433 Y49.280
-G1 X39.083 Y49.280
-M42 P9 S0 ; laser off
+G1 X34.949 Y13.876
+G1 X34.949 Y14.227
+G1 X35.450 Y14.227
+G1 X35.450 Y13.876
+G1 X34.949 Y13.876
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.044 Y44.961
-M42 P9 S255 ; Laser On
+G0 X32.440 Y14.481
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.044 Y44.961
-G1 X39.044 Y45.311
-G1 X39.544 Y45.311
-G1 X39.544 Y44.961
-G1 X39.044 Y44.961
-M42 P9 S0 ; laser off
+G1 X32.440 Y14.481
+G1 X32.440 Y14.831
+G1 X32.940 Y14.831
+G1 X32.940 Y14.481
+G1 X32.440 Y14.481
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.044 Y44.361
-M42 P9 S255 ; Laser On
+G0 X32.440 Y13.881
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.044 Y44.361
-G1 X39.044 Y44.712
-G1 X39.544 Y44.712
-G1 X39.544 Y44.361
-G1 X39.044 Y44.361
-M42 P9 S0 ; laser off
+G1 X32.440 Y13.881
+G1 X32.440 Y14.232
+G1 X32.940 Y14.232
+G1 X32.940 Y13.881
+G1 X32.440 Y13.881
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.688 Y46.231
-M42 P9 S255 ; Laser On
+G0 X33.705 Y14.475
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.688 Y46.231
-G1 X38.688 Y46.581
-G1 X39.188 Y46.581
-G1 X39.188 Y46.231
-G1 X38.688 Y46.231
-M42 P9 S0 ; laser off
+G1 X33.705 Y14.475
+G1 X33.705 Y14.826
+G1 X34.205 Y14.826
+G1 X34.205 Y14.475
+G1 X33.705 Y14.475
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X38.688 Y45.631
-M42 P9 S255 ; Laser On
+G0 X33.705 Y13.876
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X38.688 Y45.631
-G1 X38.688 Y45.982
-G1 X39.188 Y45.982
-G1 X39.188 Y45.631
-G1 X38.688 Y45.631
-M42 P9 S0 ; laser off
+G1 X33.705 Y13.876
+G1 X33.705 Y14.227
+G1 X34.205 Y14.227
+G1 X34.205 Y13.876
+G1 X33.705 Y13.876
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.819 Y47.495
-M42 P9 S255 ; Laser On
+G0 X30.452 Y20.928
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.819 Y47.495
-G1 X37.819 Y47.846
-G1 X38.320 Y47.846
-G1 X38.320 Y47.495
-G1 X37.819 Y47.495
-M42 P9 S0 ; laser off
+G1 X30.452 Y20.928
+G1 X30.452 Y21.429
+G1 X30.803 Y21.429
+G1 X30.803 Y20.928
+G1 X30.452 Y20.928
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.819 Y46.896
-M42 P9 S255 ; Laser On
+G0 X29.853 Y20.928
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.819 Y46.896
-G1 X37.819 Y47.247
-G1 X38.320 Y47.247
-G1 X38.320 Y46.896
-G1 X37.819 Y46.896
-M42 P9 S0 ; laser off
+G1 X29.853 Y20.928
+G1 X29.853 Y21.429
+G1 X30.203 Y21.429
+G1 X30.203 Y20.928
+G1 X29.853 Y20.928
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.853 Y24.244
-M42 P9 S255 ; Laser On
+G0 X30.457 Y21.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.853 Y24.244
-G1 X39.853 Y24.930
-G1 X40.919 Y24.930
-G1 X40.919 Y24.244
-G1 X39.853 Y24.244
-M42 P9 S0 ; laser off
+G1 X30.457 Y21.772
+G1 X30.457 Y22.272
+G1 X30.808 Y22.272
+G1 X30.808 Y21.772
+G1 X30.457 Y21.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.853 Y26.276
-M42 P9 S255 ; Laser On
+G0 X29.858 Y21.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.853 Y26.276
-G1 X39.853 Y26.962
-G1 X40.919 Y26.962
-G1 X40.919 Y26.276
-G1 X39.853 Y26.276
-M42 P9 S0 ; laser off
+G1 X29.858 Y21.772
+G1 X29.858 Y22.272
+G1 X30.208 Y22.272
+G1 X30.208 Y21.772
+G1 X29.858 Y21.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.910 Y45.519
-M42 P9 S255 ; Laser On
+G0 X38.561 Y21.760
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.910 Y45.519
-G1 X36.910 Y45.870
-G1 X37.410 Y45.870
-G1 X37.410 Y45.519
-G1 X36.910 Y45.519
-M42 P9 S0 ; laser off
+G1 X38.561 Y21.760
+G1 X38.561 Y22.111
+G1 X39.061 Y22.111
+G1 X39.061 Y21.760
+G1 X38.561 Y21.760
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.910 Y46.119
-M42 P9 S255 ; Laser On
+G0 X38.561 Y21.161
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.910 Y46.119
-G1 X36.910 Y46.469
-G1 X37.410 Y46.469
-G1 X37.410 Y46.119
-G1 X36.910 Y46.119
-M42 P9 S0 ; laser off
+G1 X38.561 Y21.161
+G1 X38.561 Y21.511
+G1 X39.061 Y21.511
+G1 X39.061 Y21.161
+G1 X38.561 Y21.161
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.123 Y45.519
-M42 P9 S255 ; Laser On
+G0 X38.407 Y18.825
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.123 Y45.519
-G1 X36.123 Y45.870
-G1 X36.623 Y45.870
-G1 X36.623 Y45.519
-G1 X36.123 Y45.519
-M42 P9 S0 ; laser off
+G1 X38.407 Y18.825
+G1 X38.407 Y19.326
+G1 X38.758 Y19.326
+G1 X38.758 Y18.825
+G1 X38.407 Y18.825
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X36.123 Y46.119
-M42 P9 S255 ; Laser On
+G0 X39.007 Y18.825
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X36.123 Y46.119
-G1 X36.123 Y46.469
-G1 X36.623 Y46.469
-G1 X36.623 Y46.119
-G1 X36.123 Y46.119
-M42 P9 S0 ; laser off
+G1 X39.007 Y18.825
+G1 X39.007 Y19.326
+G1 X39.357 Y19.326
+G1 X39.357 Y18.825
+G1 X39.007 Y18.825
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X47.346 Y24.295
-M42 P9 S255 ; Laser On
+G0 X23.825 Y25.248
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X47.346 Y24.295
-G1 X47.346 Y24.981
-G1 X48.412 Y24.981
-G1 X48.412 Y24.295
-G1 X47.346 Y24.295
-M42 P9 S0 ; laser off
+G1 X23.825 Y25.248
+G1 X23.825 Y25.806
+G1 X24.435 Y25.806
+G1 X24.435 Y25.248
+G1 X23.825 Y25.248
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X47.346 Y26.327
-M42 P9 S255 ; Laser On
+G0 X23.825 Y26.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X47.346 Y26.327
-G1 X47.346 Y27.013
-G1 X48.412 Y27.013
-G1 X48.412 Y26.327
-G1 X47.346 Y26.327
-M42 P9 S0 ; laser off
+G1 X23.825 Y26.772
+G1 X23.825 Y27.330
+G1 X24.435 Y27.330
+G1 X24.435 Y26.772
+G1 X23.825 Y26.772
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.110 Y44.376
-M42 P9 S255 ; Laser On
+G0 X18.669 Y26.746
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.110 Y44.376
-G1 X40.110 Y44.727
-G1 X40.611 Y44.727
-G1 X40.611 Y44.376
-G1 X40.110 Y44.376
-M42 P9 S0 ; laser off
+G1 X18.669 Y26.746
+G1 X18.669 Y27.305
+G1 X19.279 Y27.305
+G1 X19.279 Y26.746
+G1 X18.669 Y26.746
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.110 Y44.976
-M42 P9 S255 ; Laser On
+G0 X18.669 Y25.222
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.110 Y44.976
-G1 X40.110 Y45.326
-G1 X40.611 Y45.326
-G1 X40.611 Y44.976
-G1 X40.110 Y44.976
-M42 P9 S0 ; laser off
+G1 X18.669 Y25.222
+G1 X18.669 Y25.781
+G1 X19.279 Y25.781
+G1 X19.279 Y25.222
+G1 X18.669 Y25.222
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.171 Y23.089
-M42 P9 S255 ; Laser On
+G0 X42.370 Y21.111
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.171 Y23.089
-G1 X44.171 Y23.698
-G1 X44.729 Y23.698
-G1 X44.729 Y23.089
-G1 X44.171 Y23.089
-M42 P9 S0 ; laser off
+G1 X42.370 Y21.111
+G1 X42.370 Y21.612
+G1 X42.720 Y21.612
+G1 X42.720 Y21.111
+G1 X42.370 Y21.111
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.647 Y23.089
-M42 P9 S255 ; Laser On
+G0 X42.969 Y21.111
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.647 Y23.089
-G1 X42.647 Y23.698
-G1 X43.205 Y23.698
-G1 X43.205 Y23.089
-G1 X42.647 Y23.089
-M42 P9 S0 ; laser off
+G1 X42.969 Y21.111
+G1 X42.969 Y21.612
+G1 X43.320 Y21.612
+G1 X43.320 Y21.111
+G1 X42.969 Y21.111
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.923 Y26.137
-M42 P9 S255 ; Laser On
+G0 X20.648 Y21.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.923 Y26.137
-G1 X45.923 Y26.695
-G1 X46.533 Y26.695
-G1 X46.533 Y26.137
-G1 X45.923 Y26.137
-M42 P9 S0 ; laser off
+G1 X20.648 Y21.460
+G1 X20.648 Y21.511
+G1 X21.344 Y21.511
+G1 X21.344 Y21.460
+G1 X20.648 Y21.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.923 Y24.613
-M42 P9 S255 ; Laser On
+G0 X20.648 Y20.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.923 Y24.613
-G1 X45.923 Y25.171
-G1 X46.533 Y25.171
-G1 X46.533 Y24.613
-G1 X45.923 Y24.613
-M42 P9 S0 ; laser off
+G1 X20.648 Y20.960
+G1 X20.648 Y21.011
+G1 X21.344 Y21.011
+G1 X21.344 Y20.960
+G1 X20.648 Y20.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.541 Y33.693
-M42 P9 S255 ; Laser On
+G0 X20.648 Y20.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.541 Y33.693
-G1 X37.541 Y34.379
-G1 X38.608 Y34.379
-G1 X38.608 Y33.693
-G1 X37.541 Y33.693
-M42 P9 S0 ; laser off
+G1 X20.648 Y20.460
+G1 X20.648 Y20.511
+G1 X21.344 Y20.511
+G1 X21.344 Y20.460
+G1 X20.648 Y20.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X37.541 Y31.661
-M42 P9 S255 ; Laser On
+G0 X20.648 Y19.959
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X37.541 Y31.661
-G1 X37.541 Y32.347
-G1 X38.608 Y32.347
-G1 X38.608 Y31.661
-G1 X37.541 Y31.661
-M42 P9 S0 ; laser off
+G1 X20.648 Y19.959
+G1 X20.648 Y20.010
+G1 X21.344 Y20.010
+G1 X21.344 Y19.959
+G1 X20.648 Y19.959
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.417 Y33.398
-M42 P9 S255 ; Laser On
+G0 X20.648 Y19.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.417 Y33.398
-G1 X42.417 Y33.749
-G1 X42.917 Y33.749
-G1 X42.917 Y33.398
-G1 X42.417 Y33.398
-M42 P9 S0 ; laser off
+G1 X20.648 Y19.461
+G1 X20.648 Y19.512
+G1 X21.344 Y19.512
+G1 X21.344 Y19.461
+G1 X20.648 Y19.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.417 Y32.799
-M42 P9 S255 ; Laser On
+G0 X20.648 Y18.961
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.417 Y32.799
-G1 X42.417 Y33.150
-G1 X42.917 Y33.150
-G1 X42.917 Y32.799
-G1 X42.417 Y32.799
-M42 P9 S0 ; laser off
+G1 X20.648 Y18.961
+G1 X20.648 Y19.012
+G1 X21.344 Y19.012
+G1 X21.344 Y18.961
+G1 X20.648 Y18.961
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.910 Y34.798
-M42 P9 S255 ; Laser On
+G0 X20.648 Y18.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.910 Y34.798
-G1 X45.910 Y35.865
-G1 X46.596 Y35.865
-G1 X46.596 Y34.798
-G1 X45.910 Y34.798
-M42 P9 S0 ; laser off
+G1 X20.648 Y18.461
+G1 X20.648 Y18.512
+G1 X21.344 Y18.512
+G1 X21.344 Y18.461
+G1 X20.648 Y18.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X47.942 Y34.798
-M42 P9 S255 ; Laser On
+G0 X20.648 Y17.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X47.942 Y34.798
-G1 X47.942 Y35.865
-G1 X48.628 Y35.865
-G1 X48.628 Y34.798
-G1 X47.942 Y34.798
-M42 P9 S0 ; laser off
+G1 X20.648 Y17.960
+G1 X20.648 Y18.011
+G1 X21.344 Y18.011
+G1 X21.344 Y17.960
+G1 X20.648 Y17.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.855 Y44.701
-M42 P9 S255 ; Laser On
+G0 X21.694 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.855 Y44.701
-G1 X44.855 Y45.052
-G1 X45.356 Y45.052
-G1 X45.356 Y44.701
-G1 X44.855 Y44.701
-M42 P9 S0 ; laser off
+G1 X21.694 Y16.914
+G1 X21.694 Y17.610
+G1 X21.745 Y17.610
+G1 X21.745 Y16.914
+G1 X21.694 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.855 Y44.102
-M42 P9 S255 ; Laser On
+G0 X22.195 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.855 Y44.102
-G1 X44.855 Y44.453
-G1 X45.356 Y44.453
-G1 X45.356 Y44.102
-G1 X44.855 Y44.102
-M42 P9 S0 ; laser off
+G1 X22.195 Y16.914
+G1 X22.195 Y17.610
+G1 X22.245 Y17.610
+G1 X22.245 Y16.914
+G1 X22.195 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.346 Y44.707
-M42 P9 S255 ; Laser On
+G0 X22.695 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.346 Y44.707
-G1 X42.346 Y45.057
-G1 X42.846 Y45.057
-G1 X42.846 Y44.707
-G1 X42.346 Y44.707
-M42 P9 S0 ; laser off
+G1 X22.695 Y16.914
+G1 X22.695 Y17.610
+G1 X22.746 Y17.610
+G1 X22.746 Y16.914
+G1 X22.695 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.346 Y44.107
-M42 P9 S255 ; Laser On
+G0 X23.195 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.346 Y44.107
-G1 X42.346 Y44.458
-G1 X42.846 Y44.458
-G1 X42.846 Y44.107
-G1 X42.346 Y44.107
-M42 P9 S0 ; laser off
+G1 X23.195 Y16.914
+G1 X23.195 Y17.610
+G1 X23.246 Y17.610
+G1 X23.246 Y16.914
+G1 X23.195 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.611 Y44.701
-M42 P9 S255 ; Laser On
+G0 X23.693 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.611 Y44.701
-G1 X43.611 Y45.052
-G1 X44.111 Y45.052
-G1 X44.111 Y44.701
-G1 X43.611 Y44.701
-M42 P9 S0 ; laser off
+G1 X23.693 Y16.914
+G1 X23.693 Y17.610
+G1 X23.744 Y17.610
+G1 X23.744 Y16.914
+G1 X23.693 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.611 Y44.102
-M42 P9 S255 ; Laser On
+G0 X24.193 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.611 Y44.102
-G1 X43.611 Y44.453
-G1 X44.111 Y44.453
-G1 X44.111 Y44.102
-G1 X43.611 Y44.102
-M42 P9 S0 ; laser off
+G1 X24.193 Y16.914
+G1 X24.193 Y17.610
+G1 X24.244 Y17.610
+G1 X24.244 Y16.914
+G1 X24.193 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.358 Y51.154
-M42 P9 S255 ; Laser On
+G0 X24.694 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.358 Y51.154
-G1 X40.358 Y51.655
-G1 X40.709 Y51.655
-G1 X40.709 Y51.154
-G1 X40.358 Y51.154
-M42 P9 S0 ; laser off
+G1 X24.694 Y16.914
+G1 X24.694 Y17.610
+G1 X24.745 Y17.610
+G1 X24.745 Y16.914
+G1 X24.694 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.759 Y51.154
-M42 P9 S255 ; Laser On
+G0 X25.194 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.759 Y51.154
-G1 X39.759 Y51.655
-G1 X40.109 Y51.655
-G1 X40.109 Y51.154
-G1 X39.759 Y51.154
-M42 P9 S0 ; laser off
+G1 X25.194 Y16.914
+G1 X25.194 Y17.610
+G1 X25.245 Y17.610
+G1 X25.245 Y16.914
+G1 X25.194 Y16.914
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.363 Y51.998
-M42 P9 S255 ; Laser On
+G0 X25.596 Y17.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.363 Y51.998
-G1 X40.363 Y52.498
-G1 X40.714 Y52.498
-G1 X40.714 Y51.998
-G1 X40.363 Y51.998
-M42 P9 S0 ; laser off
+G1 X25.596 Y17.960
+G1 X25.596 Y18.011
+G1 X26.292 Y18.011
+G1 X26.292 Y17.960
+G1 X25.596 Y17.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.764 Y51.998
-M42 P9 S255 ; Laser On
+G0 X25.596 Y18.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.764 Y51.998
-G1 X39.764 Y52.498
-G1 X40.114 Y52.498
-G1 X40.114 Y51.998
-G1 X39.764 Y51.998
-M42 P9 S0 ; laser off
+G1 X25.596 Y18.461
+G1 X25.596 Y18.512
+G1 X26.292 Y18.512
+G1 X26.292 Y18.461
+G1 X25.596 Y18.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X48.467 Y51.986
-M42 P9 S255 ; Laser On
+G0 X25.596 Y18.961
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X48.467 Y51.986
-G1 X48.467 Y52.337
-G1 X48.967 Y52.337
-G1 X48.967 Y51.986
-G1 X48.467 Y51.986
-M42 P9 S0 ; laser off
+G1 X25.596 Y18.961
+G1 X25.596 Y19.012
+G1 X26.292 Y19.012
+G1 X26.292 Y18.961
+G1 X25.596 Y18.961
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X48.467 Y51.387
-M42 P9 S255 ; Laser On
+G0 X25.596 Y19.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X48.467 Y51.387
-G1 X48.467 Y51.737
-G1 X48.967 Y51.737
-G1 X48.967 Y51.387
-G1 X48.467 Y51.387
-M42 P9 S0 ; laser off
+G1 X25.596 Y19.461
+G1 X25.596 Y19.512
+G1 X26.292 Y19.512
+G1 X26.292 Y19.461
+G1 X25.596 Y19.461
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X48.313 Y49.051
-M42 P9 S255 ; Laser On
+G0 X25.596 Y19.959
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X48.313 Y49.051
-G1 X48.313 Y49.552
-G1 X48.664 Y49.552
-G1 X48.664 Y49.051
-G1 X48.313 Y49.051
-M42 P9 S0 ; laser off
+G1 X25.596 Y19.959
+G1 X25.596 Y20.010
+G1 X26.292 Y20.010
+G1 X26.292 Y19.959
+G1 X25.596 Y19.959
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X48.913 Y49.051
-M42 P9 S255 ; Laser On
+G0 X25.596 Y20.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X48.913 Y49.051
-G1 X48.913 Y49.552
-G1 X49.263 Y49.552
-G1 X49.263 Y49.051
-G1 X48.913 Y49.051
-M42 P9 S0 ; laser off
+G1 X25.596 Y20.460
+G1 X25.596 Y20.511
+G1 X26.292 Y20.511
+G1 X26.292 Y20.460
+G1 X25.596 Y20.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X33.731 Y55.474
-M42 P9 S255 ; Laser On
+G0 X25.596 Y20.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X33.731 Y55.474
-G1 X33.731 Y56.032
-G1 X34.341 Y56.032
-G1 X34.341 Y55.474
-G1 X33.731 Y55.474
-M42 P9 S0 ; laser off
+G1 X25.596 Y20.960
+G1 X25.596 Y21.011
+G1 X26.292 Y21.011
+G1 X26.292 Y20.960
+G1 X25.596 Y20.960
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X33.731 Y56.998
-M42 P9 S255 ; Laser On
+G0 X25.596 Y21.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X33.731 Y56.998
-G1 X33.731 Y57.556
-G1 X34.341 Y57.556
-G1 X34.341 Y56.998
-G1 X33.731 Y56.998
-M42 P9 S0 ; laser off
+G1 X25.596 Y21.460
+G1 X25.596 Y21.511
+G1 X26.292 Y21.511
+G1 X26.292 Y21.460
+G1 X25.596 Y21.460
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.575 Y56.972
-M42 P9 S255 ; Laser On
+G0 X25.194 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.575 Y56.972
-G1 X28.575 Y57.531
-G1 X29.185 Y57.531
-G1 X29.185 Y56.972
-G1 X28.575 Y56.972
-M42 P9 S0 ; laser off
+G1 X25.194 Y21.862
+G1 X25.194 Y22.558
+G1 X25.245 Y22.558
+G1 X25.245 Y21.862
+G1 X25.194 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X28.575 Y55.448
-M42 P9 S255 ; Laser On
+G0 X24.694 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X28.575 Y55.448
-G1 X28.575 Y56.007
-G1 X29.185 Y56.007
-G1 X29.185 Y55.448
-G1 X28.575 Y55.448
-M42 P9 S0 ; laser off
+G1 X24.694 Y21.862
+G1 X24.694 Y22.558
+G1 X24.745 Y22.558
+G1 X24.745 Y21.862
+G1 X24.694 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X52.276 Y51.337
-M42 P9 S255 ; Laser On
+G0 X24.193 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X52.276 Y51.337
-G1 X52.276 Y51.838
-G1 X52.626 Y51.838
-G1 X52.626 Y51.337
-G1 X52.276 Y51.337
-M42 P9 S0 ; laser off
+G1 X24.193 Y21.862
+G1 X24.193 Y22.558
+G1 X24.244 Y22.558
+G1 X24.244 Y21.862
+G1 X24.193 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X52.875 Y51.337
-M42 P9 S255 ; Laser On
+G0 X23.693 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X52.875 Y51.337
-G1 X52.875 Y51.838
-G1 X53.226 Y51.838
-G1 X53.226 Y51.337
-G1 X52.875 Y51.337
-M42 P9 S0 ; laser off
+G1 X23.693 Y21.862
+G1 X23.693 Y22.558
+G1 X23.744 Y22.558
+G1 X23.744 Y21.862
+G1 X23.693 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.621 Y35.103
-M42 P9 S255 ; Laser On
+G0 X23.195 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.621 Y35.103
-G1 X42.621 Y35.712
-G1 X43.180 Y35.712
-G1 X43.180 Y35.103
-G1 X42.621 Y35.103
-M42 P9 S0 ; laser off
+G1 X23.195 Y21.862
+G1 X23.195 Y22.558
+G1 X23.246 Y22.558
+G1 X23.246 Y21.862
+G1 X23.195 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.145 Y35.103
-M42 P9 S255 ; Laser On
+G0 X22.695 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.145 Y35.103
-G1 X44.145 Y35.712
-G1 X44.704 Y35.712
-G1 X44.704 Y35.103
-G1 X44.145 Y35.103
-M42 P9 S0 ; laser off
+G1 X22.695 Y21.862
+G1 X22.695 Y22.558
+G1 X22.746 Y22.558
+G1 X22.746 Y21.862
+G1 X22.695 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.998 Y31.882
-M42 P9 S255 ; Laser On
+G0 X22.195 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.998 Y31.882
-G1 X43.998 Y32.278
-G1 X44.394 Y32.278
-G1 X44.394 Y31.882
-G1 X43.998 Y31.882
-M42 P9 S0 ; laser off
+G1 X22.195 Y21.862
+G1 X22.195 Y22.558
+G1 X22.245 Y22.558
+G1 X22.245 Y21.862
+G1 X22.195 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.998 Y34.082
-M42 P9 S255 ; Laser On
+G0 X21.694 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.998 Y34.082
-G1 X43.998 Y34.478
-G1 X44.394 Y34.478
-G1 X44.394 Y34.082
-G1 X43.998 Y34.082
-M42 P9 S0 ; laser off
+G1 X21.694 Y21.862
+G1 X21.694 Y22.558
+G1 X21.745 Y22.558
+G1 X21.745 Y21.862
+G1 X21.694 Y21.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X23.038 Y52.273
-M42 P9 S255 ; Laser On
+G0 X23.444 Y19.388
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X23.038 Y52.273
-G1 X23.038 Y52.832
-G1 X23.647 Y52.832
-G1 X23.647 Y52.273
-G1 X23.038 Y52.273
-M42 P9 S0 ; laser off
+G1 X23.444 Y19.388
+G1 X23.444 Y20.084
+G1 X23.495 Y20.084
+G1 X23.495 Y19.388
+G1 X23.444 Y19.388
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X23.038 Y53.797
-M42 P9 S255 ; Laser On
+G0 X37.015 Y15.653
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X23.038 Y53.797
-G1 X23.038 Y54.356
-G1 X23.647 Y54.356
-G1 X23.647 Y53.797
-G1 X23.038 Y53.797
-M42 P9 S0 ; laser off
+G1 X37.015 Y15.653
+G1 X37.015 Y16.300
+G1 X37.711 Y16.300
+G1 X37.711 Y15.653
+G1 X37.015 Y15.653
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X24.308 Y52.273
-M42 P9 S255 ; Laser On
+G0 X37.015 Y16.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X24.308 Y52.273
-G1 X24.308 Y52.832
-G1 X24.917 Y52.832
-G1 X24.917 Y52.273
-G1 X24.308 Y52.273
-M42 P9 S0 ; laser off
+G1 X37.015 Y16.679
+G1 X37.015 Y16.976
+G1 X37.711 Y16.976
+G1 X37.711 Y16.679
+G1 X37.015 Y16.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X24.308 Y53.797
-M42 P9 S255 ; Laser On
+G0 X37.015 Y17.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X24.308 Y53.797
-G1 X24.308 Y54.356
-G1 X24.917 Y54.356
-G1 X24.917 Y53.797
-G1 X24.308 Y53.797
-M42 P9 S0 ; laser off
+G1 X37.015 Y17.428
+G1 X37.015 Y17.725
+G1 X37.711 Y17.725
+G1 X37.711 Y17.428
+G1 X37.015 Y17.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.633 Y13.877
-M42 P9 S255 ; Laser On
+G0 X37.015 Y18.178
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.633 Y13.877
-G1 X44.633 Y14.723
-G1 X45.080 Y14.723
-G1 X45.080 Y13.877
-G1 X44.633 Y13.877
-M42 P9 S0 ; laser off
+G1 X37.015 Y18.178
+G1 X37.015 Y18.475
+G1 X37.711 Y18.475
+G1 X37.711 Y18.178
+G1 X37.015 Y18.178
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.733 Y13.877
-M42 P9 S255 ; Laser On
+G0 X37.015 Y18.927
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.733 Y13.877
-G1 X42.733 Y14.723
-G1 X43.180 Y14.723
-G1 X43.180 Y13.877
-G1 X42.733 Y13.877
-M42 P9 S0 ; laser off
+G1 X37.015 Y18.927
+G1 X37.015 Y19.224
+G1 X37.711 Y19.224
+G1 X37.711 Y18.927
+G1 X37.015 Y18.927
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.683 Y11.579
-M42 P9 S255 ; Laser On
+G0 X37.015 Y19.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.683 Y11.579
-G1 X43.683 Y12.424
-G1 X44.130 Y12.424
-G1 X44.130 Y11.579
-G1 X43.683 Y11.579
-M42 P9 S0 ; laser off
+G1 X37.015 Y19.679
+G1 X37.015 Y19.976
+G1 X37.711 Y19.976
+G1 X37.711 Y19.679
+G1 X37.015 Y19.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X21.768 Y52.273
-M42 P9 S255 ; Laser On
+G0 X37.015 Y20.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X21.768 Y52.273
-G1 X21.768 Y52.832
-G1 X22.377 Y52.832
-G1 X22.377 Y52.273
-G1 X21.768 Y52.273
-M42 P9 S0 ; laser off
+G1 X37.015 Y20.428
+G1 X37.015 Y20.725
+G1 X37.711 Y20.725
+G1 X37.711 Y20.428
+G1 X37.015 Y20.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X21.768 Y53.797
-M42 P9 S255 ; Laser On
+G0 X37.015 Y21.104
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X21.768 Y53.797
-G1 X21.768 Y54.356
-G1 X22.377 Y54.356
-G1 X22.377 Y53.797
-G1 X21.768 Y53.797
-M42 P9 S0 ; laser off
+G1 X37.015 Y21.104
+G1 X37.015 Y21.751
+G1 X37.711 Y21.751
+G1 X37.711 Y21.104
+G1 X37.015 Y21.104
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X25.578 Y52.273
-M42 P9 S255 ; Laser On
+G0 X36.328 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X25.578 Y52.273
-G1 X25.578 Y52.832
-G1 X26.187 Y52.832
-G1 X26.187 Y52.273
-G1 X25.578 Y52.273
-M42 P9 S0 ; laser off
+G1 X36.328 Y21.054
+G1 X36.328 Y21.750
+G1 X36.626 Y21.750
+G1 X36.626 Y21.054
+G1 X36.328 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X25.578 Y53.797
-M42 P9 S255 ; Laser On
+G0 X35.602 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X25.578 Y53.797
-G1 X25.578 Y54.356
-G1 X26.187 Y54.356
-G1 X26.187 Y53.797
-G1 X25.578 Y53.797
-M42 P9 S0 ; laser off
+G1 X35.602 Y21.054
+G1 X35.602 Y21.750
+G1 X35.899 Y21.750
+G1 X35.899 Y21.054
+G1 X35.602 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.897 Y26.471
-M42 P9 S255 ; Laser On
+G0 X34.878 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.897 Y26.471
-G1 X41.897 Y26.768
-G1 X42.685 Y26.768
-G1 X42.685 Y26.471
-G1 X41.897 Y26.471
-M42 P9 S0 ; laser off
+G1 X34.878 Y21.054
+G1 X34.878 Y21.750
+G1 X35.175 Y21.750
+G1 X35.175 Y21.054
+G1 X34.878 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.897 Y25.521
-M42 P9 S255 ; Laser On
+G0 X34.152 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.897 Y25.521
-G1 X41.897 Y25.818
-G1 X42.685 Y25.818
-G1 X42.685 Y25.521
-G1 X41.897 Y25.521
-M42 P9 S0 ; laser off
+G1 X34.152 Y21.054
+G1 X34.152 Y21.750
+G1 X34.449 Y21.750
+G1 X34.449 Y21.054
+G1 X34.152 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.897 Y24.571
-M42 P9 S255 ; Laser On
+G0 X33.428 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.897 Y24.571
-G1 X41.897 Y24.868
-G1 X42.685 Y24.868
-G1 X42.685 Y24.571
-G1 X41.897 Y24.571
-M42 P9 S0 ; laser off
+G1 X33.428 Y21.054
+G1 X33.428 Y21.750
+G1 X33.725 Y21.750
+G1 X33.725 Y21.054
+G1 X33.428 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.488 Y24.571
-M42 P9 S255 ; Laser On
+G0 X32.701 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.488 Y24.571
-G1 X44.488 Y24.868
-G1 X45.276 Y24.868
-G1 X45.276 Y24.571
-G1 X44.488 Y24.571
-M42 P9 S0 ; laser off
+G1 X32.701 Y21.054
+G1 X32.701 Y21.750
+G1 X32.998 Y21.750
+G1 X32.998 Y21.054
+G1 X32.701 Y21.054
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.488 Y26.471
-M42 P9 S255 ; Laser On
+G0 X31.615 Y21.104
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.488 Y26.471
-G1 X44.488 Y26.768
-G1 X45.276 Y26.768
-G1 X45.276 Y26.471
-G1 X44.488 Y26.471
-M42 P9 S0 ; laser off
+G1 X31.615 Y21.104
+G1 X31.615 Y21.751
+G1 X32.311 Y21.751
+G1 X32.311 Y21.104
+G1 X31.615 Y21.104
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.643 Y19.740
-M42 P9 S255 ; Laser On
+G0 X31.615 Y20.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.643 Y19.740
-G1 X41.643 Y20.037
-G1 X42.431 Y20.037
-G1 X42.431 Y19.740
-G1 X41.643 Y19.740
-M42 P9 S0 ; laser off
+G1 X31.615 Y20.428
+G1 X31.615 Y20.725
+G1 X32.311 Y20.725
+G1 X32.311 Y20.428
+G1 X31.615 Y20.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.643 Y18.790
-M42 P9 S255 ; Laser On
+G0 X31.615 Y19.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.643 Y18.790
-G1 X41.643 Y19.087
-G1 X42.431 Y19.087
-G1 X42.431 Y18.790
-G1 X41.643 Y18.790
-M42 P9 S0 ; laser off
+G1 X31.615 Y19.679
+G1 X31.615 Y19.976
+G1 X32.311 Y19.976
+G1 X32.311 Y19.679
+G1 X31.615 Y19.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.643 Y17.840
-M42 P9 S255 ; Laser On
+G0 X31.615 Y18.927
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.643 Y17.840
-G1 X41.643 Y18.137
-G1 X42.431 Y18.137
-G1 X42.431 Y17.840
-G1 X41.643 Y17.840
-M42 P9 S0 ; laser off
+G1 X31.615 Y18.927
+G1 X31.615 Y19.224
+G1 X32.311 Y19.224
+G1 X32.311 Y18.927
+G1 X31.615 Y18.927
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.234 Y17.840
-M42 P9 S255 ; Laser On
+G0 X31.615 Y18.178
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.234 Y17.840
-G1 X44.234 Y18.137
-G1 X45.021 Y18.137
-G1 X45.021 Y17.840
-G1 X44.234 Y17.840
-M42 P9 S0 ; laser off
+G1 X31.615 Y18.178
+G1 X31.615 Y18.475
+G1 X32.311 Y18.475
+G1 X32.311 Y18.178
+G1 X31.615 Y18.178
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.234 Y19.740
-M42 P9 S255 ; Laser On
+G0 X31.615 Y17.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.234 Y19.740
-G1 X44.234 Y20.037
-G1 X45.021 Y20.037
-G1 X45.021 Y19.740
-G1 X44.234 Y19.740
-M42 P9 S0 ; laser off
+G1 X31.615 Y17.428
+G1 X31.615 Y17.725
+G1 X32.311 Y17.725
+G1 X32.311 Y17.428
+G1 X31.615 Y17.428
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X31.753 Y48.339
-M42 P9 S255 ; Laser On
+G0 X31.615 Y16.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X31.753 Y48.339
-G1 X31.753 Y51.585
-G1 X34.999 Y51.585
-G1 X34.999 Y48.339
-G1 X31.753 Y48.339
-M42 P9 S0 ; laser off
+G1 X31.615 Y16.679
+G1 X31.615 Y16.976
+G1 X32.311 Y16.976
+G1 X32.311 Y16.679
+G1 X31.615 Y16.679
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y45.879
-M42 P9 S255 ; Laser On
+G0 X31.615 Y15.653
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y45.879
-G1 X46.921 Y46.526
-G1 X47.617 Y46.526
-G1 X47.617 Y45.879
-G1 X46.921 Y45.879
-M42 P9 S0 ; laser off
+G1 X31.615 Y15.653
+G1 X31.615 Y16.300
+G1 X32.311 Y16.300
+G1 X32.311 Y15.653
+G1 X31.615 Y15.653
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y46.905
-M42 P9 S255 ; Laser On
+G0 X32.701 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y46.905
-G1 X46.921 Y47.202
-G1 X47.617 Y47.202
-G1 X47.617 Y46.905
-G1 X46.921 Y46.905
-M42 P9 S0 ; laser off
+G1 X32.701 Y15.654
+G1 X32.701 Y16.350
+G1 X32.998 Y16.350
+G1 X32.998 Y15.654
+G1 X32.701 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y47.654
-M42 P9 S255 ; Laser On
+G0 X33.428 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y47.654
-G1 X46.921 Y47.951
-G1 X47.617 Y47.951
-G1 X47.617 Y47.654
-G1 X46.921 Y47.654
-M42 P9 S0 ; laser off
+G1 X33.428 Y15.654
+G1 X33.428 Y16.350
+G1 X33.725 Y16.350
+G1 X33.725 Y15.654
+G1 X33.428 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y48.404
-M42 P9 S255 ; Laser On
+G0 X34.152 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y48.404
-G1 X46.921 Y48.701
-G1 X47.617 Y48.701
-G1 X47.617 Y48.404
-G1 X46.921 Y48.404
-M42 P9 S0 ; laser off
+G1 X34.152 Y15.654
+G1 X34.152 Y16.350
+G1 X34.449 Y16.350
+G1 X34.449 Y15.654
+G1 X34.152 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y49.155
-M42 P9 S255 ; Laser On
+G0 X34.878 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y49.155
-G1 X46.921 Y49.453
-G1 X47.617 Y49.453
-G1 X47.617 Y49.155
-G1 X46.921 Y49.155
-M42 P9 S0 ; laser off
+G1 X34.878 Y15.654
+G1 X34.878 Y16.350
+G1 X35.175 Y16.350
+G1 X35.175 Y15.654
+G1 X34.878 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y49.905
-M42 P9 S255 ; Laser On
+G0 X35.602 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y49.905
-G1 X46.921 Y50.202
-G1 X47.617 Y50.202
-G1 X47.617 Y49.905
-G1 X46.921 Y49.905
-M42 P9 S0 ; laser off
+G1 X35.602 Y15.654
+G1 X35.602 Y16.350
+G1 X35.899 Y16.350
+G1 X35.899 Y15.654
+G1 X35.602 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y50.654
-M42 P9 S255 ; Laser On
+G0 X36.328 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y50.654
-G1 X46.921 Y50.951
-G1 X47.617 Y50.951
-G1 X47.617 Y50.654
-G1 X46.921 Y50.654
-M42 P9 S0 ; laser off
+G1 X36.328 Y15.654
+G1 X36.328 Y16.350
+G1 X36.626 Y16.350
+G1 X36.626 Y15.654
+G1 X36.328 Y15.654
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.921 Y51.330
-M42 P9 S255 ; Laser On
+G0 X32.827 Y16.866
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.921 Y51.330
-G1 X46.921 Y51.977
-G1 X47.617 Y51.977
-G1 X47.617 Y51.330
-G1 X46.921 Y51.330
-M42 P9 S0 ; laser off
+G1 X32.827 Y16.866
+G1 X32.827 Y20.538
+G1 X36.500 Y20.538
+G1 X36.500 Y16.866
+G1 X32.827 Y16.866
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.234 Y51.280
-M42 P9 S255 ; Laser On
+G0 X27.207 Y19.027
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.234 Y51.280
-G1 X46.234 Y51.976
-G1 X46.532 Y51.976
-G1 X46.532 Y51.280
-G1 X46.234 Y51.280
-M42 P9 S0 ; laser off
+G1 X27.207 Y19.027
+G1 X27.207 Y19.378
+G1 X27.708 Y19.378
+G1 X27.708 Y19.027
+G1 X27.207 Y19.027
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.510 Y51.280
-M42 P9 S255 ; Laser On
+G0 X27.207 Y19.627
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.510 Y51.280
-G1 X45.510 Y51.976
-G1 X45.808 Y51.976
-G1 X45.808 Y51.280
-G1 X45.510 Y51.280
-M42 P9 S0 ; laser off
+G1 X27.207 Y19.627
+G1 X27.207 Y19.977
+G1 X27.708 Y19.977
+G1 X27.708 Y19.627
+G1 X27.207 Y19.627
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.784 Y51.280
-M42 P9 S255 ; Laser On
+G0 X28.583 Y19.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.784 Y51.280
-G1 X44.784 Y51.976
-G1 X45.081 Y51.976
-G1 X45.081 Y51.280
-G1 X44.784 Y51.280
-M42 P9 S0 ; laser off
+G1 X28.583 Y19.862
+G1 X28.583 Y20.362
+G1 X28.933 Y20.362
+G1 X28.933 Y19.862
+G1 X28.583 Y19.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.058 Y51.280
-M42 P9 S255 ; Laser On
+G0 X29.182 Y19.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.058 Y51.280
-G1 X44.058 Y51.976
-G1 X44.355 Y51.976
-G1 X44.355 Y51.280
-G1 X44.058 Y51.280
-M42 P9 S0 ; laser off
+G1 X29.182 Y19.862
+G1 X29.182 Y20.362
+G1 X29.533 Y20.362
+G1 X29.533 Y19.862
+G1 X29.182 Y19.862
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.334 Y51.280
-M42 P9 S255 ; Laser On
+G0 X28.807 Y18.341
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.334 Y51.280
-G1 X43.334 Y51.976
-G1 X43.631 Y51.976
-G1 X43.631 Y51.280
-G1 X43.334 Y51.280
-M42 P9 S0 ; laser off
+G1 X28.807 Y18.341
+G1 X28.807 Y18.692
+G1 X29.308 Y18.692
+G1 X29.308 Y18.341
+G1 X28.807 Y18.341
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.607 Y51.280
-M42 P9 S255 ; Laser On
+G0 X28.807 Y17.742
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.607 Y51.280
-G1 X42.607 Y51.976
-G1 X42.904 Y51.976
-G1 X42.904 Y51.280
-G1 X42.607 Y51.280
-M42 P9 S0 ; laser off
+G1 X28.807 Y17.742
+G1 X28.807 Y18.092
+G1 X29.308 Y18.092
+G1 X29.308 Y17.742
+G1 X28.807 Y17.742
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y51.330
-M42 P9 S255 ; Laser On
+G0 X29.949 Y19.003
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y51.330
-G1 X41.521 Y51.977
-G1 X42.217 Y51.977
-G1 X42.217 Y51.330
-G1 X41.521 Y51.330
-M42 P9 S0 ; laser off
+G1 X29.949 Y19.003
+G1 X29.949 Y19.503
+G1 X30.300 Y19.503
+G1 X30.300 Y19.003
+G1 X29.949 Y19.003
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y50.654
-M42 P9 S255 ; Laser On
+G0 X30.549 Y19.003
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y50.654
-G1 X41.521 Y50.951
-G1 X42.217 Y50.951
-G1 X42.217 Y50.654
-G1 X41.521 Y50.654
-M42 P9 S0 ; laser off
+G1 X30.549 Y19.003
+G1 X30.549 Y19.503
+G1 X30.899 Y19.503
+G1 X30.899 Y19.003
+G1 X30.549 Y19.003
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y49.905
-M42 P9 S255 ; Laser On
+G0 X27.918 Y16.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y49.905
-G1 X41.521 Y50.202
-G1 X42.217 Y50.202
-G1 X42.217 Y49.905
-G1 X41.521 Y49.905
-M42 P9 S0 ; laser off
+G1 X27.918 Y16.005
+G1 X27.918 Y16.355
+G1 X28.419 Y16.355
+G1 X28.419 Y16.005
+G1 X27.918 Y16.005
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y49.155
-M42 P9 S255 ; Laser On
+G0 X27.918 Y15.405
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y49.155
-G1 X41.521 Y49.453
-G1 X42.217 Y49.453
-G1 X42.217 Y49.155
-G1 X41.521 Y49.155
-M42 P9 S0 ; laser off
+G1 X27.918 Y15.405
+G1 X27.918 Y15.756
+G1 X28.419 Y15.756
+G1 X28.419 Y15.405
+G1 X27.918 Y15.405
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y48.404
-M42 P9 S255 ; Laser On
+G0 X27.004 Y16.665
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y48.404
-G1 X41.521 Y48.701
-G1 X42.217 Y48.701
-G1 X42.217 Y48.404
-G1 X41.521 Y48.404
-M42 P9 S0 ; laser off
+G1 X27.004 Y16.665
+G1 X27.004 Y17.015
+G1 X27.504 Y17.015
+G1 X27.504 Y16.665
+G1 X27.004 Y16.665
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y47.654
-M42 P9 S255 ; Laser On
+G0 X27.004 Y17.264
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y47.654
-G1 X41.521 Y47.951
-G1 X42.217 Y47.951
-G1 X42.217 Y47.654
-G1 X41.521 Y47.654
-M42 P9 S0 ; laser off
+G1 X27.004 Y17.264
+G1 X27.004 Y17.615
+G1 X27.504 Y17.615
+G1 X27.504 Y17.264
+G1 X27.004 Y17.264
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y46.905
-M42 P9 S255 ; Laser On
+G0 X29.695 Y15.447
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y46.905
-G1 X41.521 Y47.202
-G1 X42.217 Y47.202
-G1 X42.217 Y46.905
-G1 X41.521 Y46.905
-M42 P9 S0 ; laser off
+G1 X29.695 Y15.447
+G1 X29.695 Y15.947
+G1 X30.046 Y15.947
+G1 X30.046 Y15.447
+G1 X29.695 Y15.447
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.521 Y45.879
-M42 P9 S255 ; Laser On
+G0 X30.295 Y15.447
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.521 Y45.879
-G1 X41.521 Y46.526
-G1 X42.217 Y46.526
-G1 X42.217 Y45.879
-G1 X41.521 Y45.879
-M42 P9 S0 ; laser off
+G1 X30.295 Y15.447
+G1 X30.295 Y15.947
+G1 X30.645 Y15.947
+G1 X30.645 Y15.447
+G1 X30.295 Y15.447
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.607 Y45.880
-M42 P9 S255 ; Laser On
+G0 X38.611 Y20.349
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.607 Y45.880
-G1 X42.607 Y46.576
-G1 X42.904 Y46.576
-G1 X42.904 Y45.880
-G1 X42.607 Y45.880
-M42 P9 S0 ; laser off
+G1 X38.611 Y20.349
+G1 X38.611 Y20.850
+G1 X38.961 Y20.850
+G1 X38.961 Y20.349
+G1 X38.611 Y20.349
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X43.334 Y45.880
-M42 P9 S255 ; Laser On
+G0 X39.210 Y20.349
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X43.334 Y45.880
-G1 X43.334 Y46.576
-G1 X43.631 Y46.576
-G1 X43.631 Y45.880
-G1 X43.334 Y45.880
-M42 P9 S0 ; laser off
+G1 X39.210 Y20.349
+G1 X39.210 Y20.850
+G1 X39.560 Y20.850
+G1 X39.560 Y20.349
+G1 X39.210 Y20.349
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.058 Y45.880
-M42 P9 S255 ; Laser On
+G0 X42.960 Y19.794
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.058 Y45.880
-G1 X44.058 Y46.576
-G1 X44.355 Y46.576
-G1 X44.355 Y45.880
-G1 X44.058 Y45.880
-M42 P9 S0 ; laser off
+G1 X42.960 Y19.794
+G1 X42.960 Y20.145
+G1 X43.461 Y20.145
+G1 X43.461 Y19.794
+G1 X42.960 Y19.794
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X44.784 Y45.880
-M42 P9 S255 ; Laser On
+G0 X42.960 Y20.394
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X44.784 Y45.880
-G1 X44.784 Y46.576
-G1 X45.081 Y46.576
-G1 X45.081 Y45.880
-G1 X44.784 Y45.880
-M42 P9 S0 ; laser off
+G1 X42.960 Y20.394
+G1 X42.960 Y20.744
+G1 X43.461 Y20.744
+G1 X43.461 Y20.394
+G1 X42.960 Y20.394
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X45.510 Y45.880
-M42 P9 S255 ; Laser On
+G0 X39.933 Y20.348
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X45.510 Y45.880
-G1 X45.510 Y46.576
-G1 X45.808 Y46.576
-G1 X45.808 Y45.880
-G1 X45.510 Y45.880
-M42 P9 S0 ; laser off
+G1 X39.933 Y20.348
+G1 X39.933 Y20.698
+G1 X40.433 Y20.698
+G1 X40.433 Y20.348
+G1 X39.933 Y20.348
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X46.234 Y45.880
-M42 P9 S255 ; Laser On
+G0 X39.933 Y19.748
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X46.234 Y45.880
-G1 X46.234 Y46.576
-G1 X46.532 Y46.576
-G1 X46.532 Y45.880
-G1 X46.234 Y45.880
-M42 P9 S0 ; laser off
+G1 X39.933 Y19.748
+G1 X39.933 Y20.099
+G1 X40.433 Y20.099
+G1 X40.433 Y19.748
+G1 X39.933 Y19.748
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X42.733 Y47.092
-M42 P9 S255 ; Laser On
+G0 X40.820 Y19.714
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X42.733 Y47.092
-G1 X42.733 Y50.764
-G1 X46.406 Y50.764
-G1 X46.406 Y47.092
-G1 X42.733 Y47.092
-M42 P9 S0 ; laser off
+G1 X40.820 Y19.714
+G1 X40.820 Y20.215
+G1 X41.171 Y20.215
+G1 X41.171 Y19.714
+G1 X40.820 Y19.714
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.382 Y34.070
-M42 P9 S255 ; Laser On
+G0 X41.420 Y19.714
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.382 Y34.070
-G1 X41.382 Y34.967
-G1 X41.778 Y34.967
-G1 X41.778 Y34.070
-G1 X41.382 Y34.070
-M42 P9 S0 ; laser off
+G1 X41.420 Y19.714
+G1 X41.420 Y20.215
+G1 X41.770 Y20.215
+G1 X41.770 Y19.714
+G1 X41.420 Y19.714
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.432 Y34.070
-M42 P9 S255 ; Laser On
+G0 X42.122 Y19.794
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.432 Y34.070
-G1 X40.432 Y34.967
-G1 X40.828 Y34.967
-G1 X40.828 Y34.070
-G1 X40.432 Y34.070
-M42 P9 S0 ; laser off
+G1 X42.122 Y19.794
+G1 X42.122 Y20.145
+G1 X42.622 Y20.145
+G1 X42.622 Y19.794
+G1 X42.122 Y19.794
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.482 Y34.070
-M42 P9 S255 ; Laser On
+G0 X42.122 Y20.394
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.482 Y34.070
-G1 X39.482 Y34.967
-G1 X39.878 Y34.967
-G1 X39.878 Y34.070
-G1 X39.482 Y34.070
-M42 P9 S0 ; laser off
+G1 X42.122 Y20.394
+G1 X42.122 Y20.744
+G1 X42.622 Y20.744
+G1 X42.622 Y20.394
+G1 X42.122 Y20.394
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X39.482 Y31.370
-M42 P9 S255 ; Laser On
+G0 X30.230 Y16.259
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X39.482 Y31.370
-G1 X39.482 Y32.267
-G1 X39.878 Y32.267
-G1 X39.878 Y31.370
-G1 X39.482 Y31.370
-M42 P9 S0 ; laser off
+G1 X30.230 Y16.259
+G1 X30.230 Y16.609
+G1 X30.730 Y16.609
+G1 X30.730 Y16.259
+G1 X30.230 Y16.259
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X40.432 Y31.370
-M42 P9 S255 ; Laser On
+G0 X30.230 Y16.858
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X40.432 Y31.370
-G1 X40.432 Y32.267
-G1 X40.828 Y32.267
-G1 X40.828 Y31.370
-G1 X40.432 Y31.370
-M42 P9 S0 ; laser off
+G1 X30.230 Y16.858
+G1 X30.230 Y17.209
+G1 X30.730 Y17.209
+G1 X30.730 Y16.858
+G1 X30.230 Y16.858
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X41.382 Y31.370
-M42 P9 S255 ; Laser On
+G0 X24.310 Y14.507
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X41.382 Y31.370
-G1 X41.382 Y32.267
-G1 X41.778 Y32.267
-G1 X41.778 Y31.370
-G1 X41.382 Y31.370
-M42 P9 S0 ; laser off
+G1 X24.310 Y14.507
+G1 X24.310 Y15.008
+G1 X24.661 Y15.008
+G1 X24.661 Y14.507
+G1 X24.310 Y14.507
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X18.086 Y55.053
-M42 P9 S255 ; Laser On
+G0 X23.711 Y14.507
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X18.086 Y55.053
-G1 X18.086 Y56.951
-G1 X18.642 Y56.951
-G1 X18.642 Y55.053
-G1 X18.086 Y55.053
-M42 P9 S0 ; laser off
+G1 X23.711 Y14.507
+G1 X23.711 Y15.008
+G1 X24.061 Y15.008
+G1 X24.061 Y14.507
+G1 X23.711 Y14.507
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X16.816 Y55.053
-M42 P9 S255 ; Laser On
+G0 X44.145 Y17.323
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X16.816 Y55.053
-G1 X16.816 Y56.951
-G1 X17.372 Y56.951
-G1 X17.372 Y55.053
-G1 X16.816 Y55.053
-M42 P9 S0 ; laser off
+G1 X44.145 Y17.323
+G1 X44.145 Y18.847
+G1 X48.209 Y18.847
+G1 X48.209 Y17.323
+G1 X44.145 Y17.323
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X15.546 Y55.053
-M42 P9 S255 ; Laser On
+G0 X44.145 Y19.863
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X15.546 Y55.053
-G1 X15.546 Y56.951
-G1 X16.102 Y56.951
-G1 X16.102 Y55.053
-G1 X15.546 Y55.053
-M42 P9 S0 ; laser off
+G1 X44.145 Y19.863
+G1 X44.145 Y21.387
+G1 X48.209 Y21.387
+G1 X48.209 Y19.863
+G1 X44.145 Y19.863
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X14.276 Y55.053
-M42 P9 S255 ; Laser On
+G0 X44.145 Y22.403
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X14.276 Y55.053
-G1 X14.276 Y56.951
-G1 X14.832 Y56.951
-G1 X14.832 Y55.053
-G1 X14.276 Y55.053
-M42 P9 S0 ; laser off
+G1 X44.145 Y22.403
+G1 X44.145 Y23.927
+G1 X48.209 Y23.927
+G1 X48.209 Y22.403
+G1 X44.145 Y22.403
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X13.006 Y55.053
-M42 P9 S255 ; Laser On
+G0 X22.048 Y24.953
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X13.006 Y55.053
-G1 X13.006 Y56.951
-G1 X13.562 Y56.951
-G1 X13.562 Y55.053
-G1 X13.006 Y55.053
-M42 P9 S0 ; laser off
+G1 X22.048 Y24.953
+G1 X22.048 Y25.949
+G1 X23.245 Y25.949
+G1 X23.245 Y24.953
+G1 X22.048 Y24.953
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X13.006 Y51.502
-M42 P9 S255 ; Laser On
+G0 X19.849 Y24.953
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X13.006 Y51.502
-G1 X13.006 Y53.400
-G1 X13.562 Y53.400
-G1 X13.562 Y51.502
-G1 X13.006 Y51.502
-M42 P9 S0 ; laser off
+G1 X19.849 Y24.953
+G1 X19.849 Y25.949
+G1 X21.045 Y25.949
+G1 X21.045 Y24.953
+G1 X19.849 Y24.953
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X14.276 Y51.502
-M42 P9 S255 ; Laser On
+G0 X19.849 Y26.553
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X14.276 Y51.502
-G1 X14.276 Y53.400
-G1 X14.832 Y53.400
-G1 X14.832 Y51.502
-G1 X14.276 Y51.502
-M42 P9 S0 ; laser off
+G1 X19.849 Y26.553
+G1 X19.849 Y27.549
+G1 X21.045 Y27.549
+G1 X21.045 Y26.553
+G1 X19.849 Y26.553
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
-G0 X15.546 Y51.502
-M42 P9 S255 ; Laser On
+G0 X22.048 Y26.553
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S255 ; Laser On
 G4 P50 ; Delay in milliseconds
 G1 F50
-G1 X15.546 Y51.502
-G1 X15.546 Y53.400
-G1 X16.102 Y53.400
-G1 X16.102 Y51.502
-G1 X15.546 Y51.502
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X16.816 Y51.502
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X16.816 Y51.502
-G1 X16.816 Y53.400
-G1 X17.372 Y53.400
-G1 X17.372 Y51.502
-G1 X16.816 Y51.502
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X18.086 Y51.502
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X18.086 Y51.502
-G1 X18.086 Y53.400
-G1 X18.642 Y53.400
-G1 X18.642 Y51.502
-G1 X18.086 Y51.502
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X10.907 Y44.968
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X10.907 Y44.968
-G1 X10.907 Y46.269
-G1 X12.207 Y46.269
-G1 X12.207 Y44.968
-G1 X10.907 Y44.968
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X10.907 Y47.508
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X10.907 Y47.508
-G1 X10.907 Y48.809
-G1 X12.207 Y48.809
-G1 X12.207 Y47.508
-G1 X10.907 Y47.508
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X37.113 Y49.253
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X37.113 Y49.253
-G1 X37.113 Y49.604
-G1 X37.614 Y49.604
-G1 X37.614 Y49.253
-G1 X37.113 Y49.253
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X37.113 Y49.853
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X37.113 Y49.853
-G1 X37.113 Y50.203
-G1 X37.614 Y50.203
-G1 X37.614 Y49.853
-G1 X37.113 Y49.853
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X38.489 Y50.088
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X38.489 Y50.088
-G1 X38.489 Y50.588
-G1 X38.839 Y50.588
-G1 X38.839 Y50.088
-G1 X38.489 Y50.088
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.088 Y50.088
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.088 Y50.088
-G1 X39.088 Y50.588
-G1 X39.439 Y50.588
-G1 X39.439 Y50.088
-G1 X39.088 Y50.088
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X38.713 Y48.567
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X38.713 Y48.567
-G1 X38.713 Y48.918
-G1 X39.214 Y48.918
-G1 X39.214 Y48.567
-G1 X38.713 Y48.567
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X38.713 Y47.968
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X38.713 Y47.968
-G1 X38.713 Y48.318
-G1 X39.214 Y48.318
-G1 X39.214 Y47.968
-G1 X38.713 Y47.968
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.855 Y49.229
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.855 Y49.229
-G1 X39.855 Y49.729
-G1 X40.206 Y49.729
-G1 X40.206 Y49.229
-G1 X39.855 Y49.229
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X40.455 Y49.229
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X40.455 Y49.229
-G1 X40.455 Y49.729
-G1 X40.805 Y49.729
-G1 X40.805 Y49.229
-G1 X40.455 Y49.229
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X37.824 Y46.231
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X37.824 Y46.231
-G1 X37.824 Y46.581
-G1 X38.325 Y46.581
-G1 X38.325 Y46.231
-G1 X37.824 Y46.231
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X37.824 Y45.631
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X37.824 Y45.631
-G1 X37.824 Y45.982
-G1 X38.325 Y45.982
-G1 X38.325 Y45.631
-G1 X37.824 Y45.631
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X36.910 Y46.891
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X36.910 Y46.891
-G1 X36.910 Y47.241
-G1 X37.410 Y47.241
-G1 X37.410 Y46.891
-G1 X36.910 Y46.891
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X36.910 Y47.490
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X36.910 Y47.490
-G1 X36.910 Y47.841
-G1 X37.410 Y47.841
-G1 X37.410 Y47.490
-G1 X36.910 Y47.490
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.601 Y45.673
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.601 Y45.673
-G1 X39.601 Y46.173
-G1 X39.952 Y46.173
-G1 X39.952 Y45.673
-G1 X39.601 Y45.673
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X40.201 Y45.673
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X40.201 Y45.673
-G1 X40.201 Y46.173
-G1 X40.551 Y46.173
-G1 X40.551 Y45.673
-G1 X40.201 Y45.673
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.003 Y30.033
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.003 Y30.033
-G1 X46.003 Y31.029
-G1 X49.501 Y31.029
-G1 X49.501 Y30.033
-G1 X46.003 Y30.033
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.003 Y32.835
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.003 Y32.835
-G1 X46.003 Y33.830
-G1 X49.501 Y33.830
-G1 X49.501 Y32.835
-G1 X46.003 Y32.835
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X48.517 Y50.575
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X48.517 Y50.575
-G1 X48.517 Y51.076
-G1 X48.867 Y51.076
-G1 X48.867 Y50.575
-G1 X48.517 Y50.575
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X49.116 Y50.575
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X49.116 Y50.575
-G1 X49.116 Y51.076
-G1 X49.466 Y51.076
-G1 X49.466 Y50.575
-G1 X49.116 Y50.575
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.866 Y50.020
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.866 Y50.020
-G1 X52.866 Y50.371
-G1 X53.367 Y50.371
-G1 X53.367 Y50.020
-G1 X52.866 Y50.020
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.866 Y50.620
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.866 Y50.620
-G1 X52.866 Y50.970
-G1 X53.367 Y50.970
-G1 X53.367 Y50.620
-G1 X52.866 Y50.620
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X49.839 Y50.574
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X49.839 Y50.574
-G1 X49.839 Y50.924
-G1 X50.339 Y50.924
-G1 X50.339 Y50.574
-G1 X49.839 Y50.574
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X49.839 Y49.974
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X49.839 Y49.974
-G1 X49.839 Y50.325
-G1 X50.339 Y50.325
-G1 X50.339 Y49.974
-G1 X49.839 Y49.974
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X50.726 Y49.940
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X50.726 Y49.940
-G1 X50.726 Y50.441
-G1 X51.077 Y50.441
-G1 X51.077 Y49.940
-G1 X50.726 Y49.940
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X51.326 Y49.940
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X51.326 Y49.940
-G1 X51.326 Y50.441
-G1 X51.676 Y50.441
-G1 X51.676 Y49.940
-G1 X51.326 Y49.940
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.028 Y50.020
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.028 Y50.020
-G1 X52.028 Y50.371
-G1 X52.528 Y50.371
-G1 X52.528 Y50.020
-G1 X52.028 Y50.020
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.028 Y50.620
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.028 Y50.620
-G1 X52.028 Y50.970
-G1 X52.528 Y50.970
-G1 X52.528 Y50.620
-G1 X52.028 Y50.620
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X40.136 Y46.485
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X40.136 Y46.485
-G1 X40.136 Y46.835
-G1 X40.636 Y46.835
-G1 X40.636 Y46.485
-G1 X40.136 Y46.485
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X40.136 Y47.084
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X40.136 Y47.084
-G1 X40.136 Y47.434
-G1 X40.636 Y47.434
-G1 X40.636 Y47.084
-G1 X40.136 Y47.084
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X11.383 Y50.142
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X11.383 Y50.142
-G1 X11.383 Y50.289
-G1 X11.680 Y50.289
-G1 X11.680 Y50.142
-G1 X11.383 Y50.142
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X11.383 Y49.543
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X11.383 Y49.543
-G1 X11.383 Y49.690
-G1 X11.680 Y49.690
-G1 X11.680 Y49.543
-G1 X11.383 Y49.543
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.035 Y17.250
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.035 Y17.250
-G1 X29.035 Y17.548
-G1 X29.182 Y17.548
-G1 X29.182 Y17.250
-G1 X29.035 Y17.250
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.435 Y17.250
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.435 Y17.250
-G1 X28.435 Y17.548
-G1 X28.583 Y17.548
-G1 X28.583 Y17.250
-G1 X28.435 Y17.250
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X19.943 Y54.105
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X19.943 Y54.105
-G1 X19.943 Y54.252
-G1 X20.240 Y54.252
-G1 X20.240 Y54.105
-G1 X19.943 Y54.105
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X19.943 Y54.704
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X19.943 Y54.704
-G1 X19.943 Y54.851
-G1 X20.240 Y54.851
-G1 X20.240 Y54.704
-G1 X19.943 Y54.704
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X34.216 Y44.733
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X34.216 Y44.733
-G1 X34.216 Y45.234
-G1 X34.567 Y45.234
-G1 X34.567 Y44.733
-G1 X34.216 Y44.733
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X33.617 Y44.733
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X33.617 Y44.733
-G1 X33.617 Y45.234
-G1 X33.967 Y45.234
-G1 X33.967 Y44.733
-G1 X33.617 Y44.733
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X40.282 Y35.508
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X40.282 Y35.508
-G1 X40.282 Y36.008
-G1 X40.632 Y36.008
-G1 X40.632 Y35.508
-G1 X40.282 Y35.508
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.682 Y35.508
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.682 Y35.508
-G1 X39.682 Y36.008
-G1 X40.033 Y36.008
-G1 X40.033 Y35.508
-G1 X39.682 Y35.508
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X41.684 Y36.021
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X41.684 Y36.021
-G1 X41.684 Y36.521
-G1 X42.034 Y36.521
-G1 X42.034 Y36.021
-G1 X41.684 Y36.021
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X41.084 Y36.021
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X41.084 Y36.021
-G1 X41.084 Y36.521
-G1 X41.435 Y36.521
-G1 X41.435 Y36.021
-G1 X41.084 Y36.021
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.092 Y50.472
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.092 Y50.472
-G1 X23.092 Y50.823
-G1 X23.593 Y50.823
-G1 X23.593 Y50.472
-G1 X23.092 Y50.472
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.092 Y51.072
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.092 Y51.072
-G1 X23.092 Y51.422
-G1 X23.593 Y51.422
-G1 X23.593 Y51.072
-G1 X23.092 Y51.072
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.362 Y50.472
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.362 Y50.472
-G1 X24.362 Y50.823
-G1 X24.863 Y50.823
-G1 X24.863 Y50.472
-G1 X24.362 Y50.472
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.362 Y51.072
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.362 Y51.072
-G1 X24.362 Y51.422
-G1 X24.863 Y51.422
-G1 X24.863 Y51.072
-G1 X24.362 Y51.072
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.822 Y50.472
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.822 Y50.472
-G1 X21.822 Y50.823
-G1 X22.323 Y50.823
-G1 X22.323 Y50.472
-G1 X21.822 Y50.472
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.822 Y51.072
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.822 Y51.072
-G1 X21.822 Y51.422
-G1 X22.323 Y51.422
-G1 X22.323 Y51.072
-G1 X21.822 Y51.072
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.632 Y50.472
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.632 Y50.472
-G1 X25.632 Y50.823
-G1 X26.133 Y50.823
-G1 X26.133 Y50.472
-G1 X25.632 Y50.472
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.632 Y51.072
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.632 Y51.072
-G1 X25.632 Y51.422
-G1 X26.133 Y51.422
-G1 X26.133 Y51.072
-G1 X25.632 Y51.072
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X56.646 Y38.103
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X56.646 Y38.103
-G1 X56.646 Y38.453
-G1 X57.146 Y38.453
-G1 X57.146 Y38.103
-G1 X56.646 Y38.103
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X56.646 Y37.503
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X56.646 Y37.503
-G1 X56.646 Y37.854
-G1 X57.146 Y37.854
-G1 X57.146 Y37.503
-G1 X56.646 Y37.503
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X56.646 Y36.833
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X56.646 Y36.833
-G1 X56.646 Y37.183
-G1 X57.146 Y37.183
-G1 X57.146 Y36.833
-G1 X56.646 Y36.833
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X56.646 Y36.233
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X56.646 Y36.233
-G1 X56.646 Y36.584
-G1 X57.146 Y36.584
-G1 X57.146 Y36.233
-G1 X56.646 Y36.233
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.258 Y51.986
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.258 Y51.986
-G1 X27.258 Y52.337
-G1 X27.758 Y52.337
-G1 X27.758 Y51.986
-G1 X27.258 Y51.986
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.258 Y51.387
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.258 Y51.387
-G1 X27.258 Y51.737
-G1 X27.758 Y51.737
-G1 X27.758 Y51.387
-G1 X27.258 Y51.387
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X35.369 Y17.247
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X35.369 Y17.247
-G1 X35.369 Y18.517
-G1 X36.005 Y18.517
-G1 X36.005 Y17.247
-G1 X35.369 Y17.247
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X36.271 Y17.247
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X36.271 Y17.247
-G1 X36.271 Y18.517
-G1 X36.906 Y18.517
-G1 X36.906 Y17.247
-G1 X36.271 Y17.247
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.179 Y10.305
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.179 Y10.305
-G1 X26.179 Y12.601
-G1 X27.400 Y12.601
-G1 X27.400 Y10.305
-G1 X26.179 Y10.305
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.101 Y10.305
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.101 Y10.305
-G1 X28.101 Y12.601
-G1 X29.323 Y12.601
-G1 X29.323 Y10.305
-G1 X28.101 Y10.305
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.652 Y13.753
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.652 Y13.753
-G1 X27.652 Y15.300
-G1 X27.847 Y15.300
-G1 X27.847 Y13.753
-G1 X27.652 Y13.753
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.302 Y13.753
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.302 Y13.753
-G1 X28.302 Y15.300
-G1 X28.498 Y15.300
-G1 X28.498 Y13.753
-G1 X28.302 Y13.753
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.004 Y13.753
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.004 Y13.753
-G1 X27.004 Y15.300
-G1 X27.200 Y15.300
-G1 X27.200 Y13.753
-G1 X27.004 Y13.753
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.952 Y13.753
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.952 Y13.753
-G1 X28.952 Y15.300
-G1 X29.148 Y15.300
-G1 X29.148 Y13.753
-G1 X28.952 Y13.753
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.354 Y13.753
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.354 Y13.753
-G1 X26.354 Y15.300
-G1 X26.549 Y15.300
-G1 X26.549 Y13.753
-G1 X26.354 Y13.753
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X54.051 Y47.549
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X54.051 Y47.549
-G1 X54.051 Y49.073
-G1 X58.115 Y49.073
-G1 X58.115 Y47.549
-G1 X54.051 Y47.549
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X54.051 Y50.089
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X54.051 Y50.089
-G1 X54.051 Y51.613
-G1 X58.115 Y51.613
-G1 X58.115 Y50.089
-G1 X54.051 Y50.089
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X54.051 Y52.629
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X54.051 Y52.629
-G1 X54.051 Y54.153
-G1 X58.115 Y54.153
-G1 X58.115 Y52.629
-G1 X54.051 Y52.629
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.791 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.791 Y27.051
-G1 X28.791 Y28.524
-G1 X29.070 Y28.524
-G1 X29.070 Y27.051
-G1 X28.791 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.291 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.291 Y27.051
-G1 X28.291 Y28.524
-G1 X28.570 Y28.524
-G1 X28.570 Y27.051
-G1 X28.291 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.793 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.793 Y27.051
-G1 X27.793 Y28.524
-G1 X28.072 Y28.524
-G1 X28.072 Y27.051
-G1 X27.793 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.292 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.292 Y27.051
-G1 X27.292 Y28.524
-G1 X27.572 Y28.524
-G1 X27.572 Y27.051
-G1 X27.292 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.792 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.792 Y27.051
-G1 X26.792 Y28.524
-G1 X27.071 Y28.524
-G1 X27.071 Y27.051
-G1 X26.792 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.292 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.292 Y27.051
-G1 X26.292 Y28.524
-G1 X26.571 Y28.524
-G1 X26.571 Y27.051
-G1 X26.292 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.791 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.791 Y27.051
-G1 X25.791 Y28.524
-G1 X26.071 Y28.524
-G1 X26.071 Y27.051
-G1 X25.791 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.291 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.291 Y27.051
-G1 X25.291 Y28.524
-G1 X25.570 Y28.524
-G1 X25.570 Y27.051
-G1 X25.291 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.790 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.790 Y27.051
-G1 X24.790 Y28.524
-G1 X25.070 Y28.524
-G1 X25.070 Y27.051
-G1 X24.790 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.293 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.293 Y27.051
-G1 X24.293 Y28.524
-G1 X24.572 Y28.524
-G1 X24.572 Y27.051
-G1 X24.293 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.792 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.792 Y27.051
-G1 X23.792 Y28.524
-G1 X24.072 Y28.524
-G1 X24.072 Y27.051
-G1 X23.792 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.292 Y27.051
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.292 Y27.051
-G1 X23.292 Y28.524
-G1 X23.571 Y28.524
-G1 X23.571 Y27.051
-G1 X23.292 Y27.051
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y26.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y26.182
-G1 X21.229 Y26.462
-G1 X22.703 Y26.462
-G1 X22.703 Y26.182
-G1 X21.229 Y26.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y25.682
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y25.682
-G1 X21.229 Y25.961
-G1 X22.703 Y25.961
-G1 X22.703 Y25.682
-G1 X21.229 Y25.682
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y25.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y25.182
-G1 X21.229 Y25.461
-G1 X22.703 Y25.461
-G1 X22.703 Y25.182
-G1 X21.229 Y25.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y24.681
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y24.681
-G1 X21.229 Y24.961
-G1 X22.703 Y24.961
-G1 X22.703 Y24.681
-G1 X21.229 Y24.681
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y24.181
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y24.181
-G1 X21.229 Y24.460
-G1 X22.703 Y24.460
-G1 X22.703 Y24.181
-G1 X21.229 Y24.181
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y23.683
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y23.683
-G1 X21.229 Y23.962
-G1 X22.703 Y23.962
-G1 X22.703 Y23.683
-G1 X21.229 Y23.683
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y23.183
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y23.183
-G1 X21.229 Y23.462
-G1 X22.703 Y23.462
-G1 X22.703 Y23.183
-G1 X21.229 Y23.183
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y22.682
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y22.682
-G1 X21.229 Y22.962
-G1 X22.703 Y22.962
-G1 X22.703 Y22.682
-G1 X21.229 Y22.682
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y22.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y22.182
-G1 X21.229 Y22.461
-G1 X22.703 Y22.461
-G1 X22.703 Y22.182
-G1 X21.229 Y22.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y21.681
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y21.681
-G1 X21.229 Y21.961
-G1 X22.703 Y21.961
-G1 X22.703 Y21.681
-G1 X21.229 Y21.681
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y21.181
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y21.181
-G1 X21.229 Y21.460
-G1 X22.703 Y21.460
-G1 X22.703 Y21.181
-G1 X21.229 Y21.181
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X21.229 Y20.683
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X21.229 Y20.683
-G1 X21.229 Y20.963
-G1 X22.703 Y20.963
-G1 X22.703 Y20.683
-G1 X21.229 Y20.683
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.292 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.292 Y18.618
-G1 X23.292 Y20.091
-G1 X23.571 Y20.091
-G1 X23.571 Y18.618
-G1 X23.292 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.792 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.792 Y18.618
-G1 X23.792 Y20.091
-G1 X24.072 Y20.091
-G1 X24.072 Y18.618
-G1 X23.792 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.293 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.293 Y18.618
-G1 X24.293 Y20.091
-G1 X24.572 Y20.091
-G1 X24.572 Y18.618
-G1 X24.293 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X24.790 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X24.790 Y18.618
-G1 X24.790 Y20.091
-G1 X25.070 Y20.091
-G1 X25.070 Y18.618
-G1 X24.790 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.291 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.291 Y18.618
-G1 X25.291 Y20.091
-G1 X25.570 Y20.091
-G1 X25.570 Y18.618
-G1 X25.291 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.791 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.791 Y18.618
-G1 X25.791 Y20.091
-G1 X26.071 Y20.091
-G1 X26.071 Y18.618
-G1 X25.791 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.292 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.292 Y18.618
-G1 X26.292 Y20.091
-G1 X26.571 Y20.091
-G1 X26.571 Y18.618
-G1 X26.292 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.792 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.792 Y18.618
-G1 X26.792 Y20.091
-G1 X27.071 Y20.091
-G1 X27.071 Y18.618
-G1 X26.792 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.292 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.292 Y18.618
-G1 X27.292 Y20.091
-G1 X27.572 Y20.091
-G1 X27.572 Y18.618
-G1 X27.292 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.793 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.793 Y18.618
-G1 X27.793 Y20.091
-G1 X28.072 Y20.091
-G1 X28.072 Y18.618
-G1 X27.793 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.291 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.291 Y18.618
-G1 X28.291 Y20.091
-G1 X28.570 Y20.091
-G1 X28.570 Y18.618
-G1 X28.291 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.791 Y18.618
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.791 Y18.618
-G1 X28.791 Y20.091
-G1 X29.070 Y20.091
-G1 X29.070 Y18.618
-G1 X28.791 Y18.618
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y20.683
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y20.683
-G1 X29.662 Y20.963
-G1 X31.135 Y20.963
-G1 X31.135 Y20.683
-G1 X29.662 Y20.683
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y21.181
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y21.181
-G1 X29.662 Y21.460
-G1 X31.135 Y21.460
-G1 X31.135 Y21.181
-G1 X29.662 Y21.181
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y21.681
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y21.681
-G1 X29.662 Y21.961
-G1 X31.135 Y21.961
-G1 X31.135 Y21.681
-G1 X29.662 Y21.681
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y22.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y22.182
-G1 X29.662 Y22.461
-G1 X31.135 Y22.461
-G1 X31.135 Y22.182
-G1 X29.662 Y22.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y22.682
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y22.682
-G1 X29.662 Y22.962
-G1 X31.135 Y22.962
-G1 X31.135 Y22.682
-G1 X29.662 Y22.682
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y23.183
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y23.183
-G1 X29.662 Y23.462
-G1 X31.135 Y23.462
-G1 X31.135 Y23.183
-G1 X29.662 Y23.183
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y23.683
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y23.683
-G1 X29.662 Y23.962
-G1 X31.135 Y23.962
-G1 X31.135 Y23.683
-G1 X29.662 Y23.683
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y24.181
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y24.181
-G1 X29.662 Y24.460
-G1 X31.135 Y24.460
-G1 X31.135 Y24.181
-G1 X29.662 Y24.181
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y24.681
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y24.681
-G1 X29.662 Y24.961
-G1 X31.135 Y24.961
-G1 X31.135 Y24.681
-G1 X29.662 Y24.681
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y25.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y25.182
-G1 X29.662 Y25.461
-G1 X31.135 Y25.461
-G1 X31.135 Y25.182
-G1 X29.662 Y25.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y25.682
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y25.682
-G1 X29.662 Y25.961
-G1 X31.135 Y25.961
-G1 X31.135 Y25.682
-G1 X29.662 Y25.682
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.662 Y26.182
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.662 Y26.182
-G1 X29.662 Y26.462
-G1 X31.135 Y26.462
-G1 X31.135 Y26.182
-G1 X29.662 Y26.182
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X35.928 Y24.359
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X35.928 Y24.359
-G1 X35.928 Y25.629
-G1 X36.563 Y25.629
-G1 X36.563 Y24.359
-G1 X35.928 Y24.359
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X36.830 Y24.359
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X36.830 Y24.359
-G1 X36.830 Y25.629
-G1 X37.465 Y25.629
-G1 X37.465 Y24.359
-G1 X36.830 Y24.359
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X33.337 Y31.394
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X33.337 Y31.394
-G1 X33.337 Y32.664
-G1 X33.972 Y32.664
-G1 X33.972 Y31.394
-G1 X33.337 Y31.394
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X34.239 Y31.394
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X34.239 Y31.394
-G1 X34.239 Y32.664
-G1 X34.874 Y32.664
-G1 X34.874 Y31.394
-G1 X34.239 Y31.394
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X51.219 Y17.475
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X51.219 Y17.475
-G1 X51.219 Y18.745
-G1 X51.854 Y18.745
-G1 X51.854 Y17.475
-G1 X51.219 Y17.475
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.121 Y17.475
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.121 Y17.475
-G1 X52.121 Y18.745
-G1 X52.756 Y18.745
-G1 X52.756 Y17.475
-G1 X52.121 Y17.475
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X50.889 Y24.511
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X50.889 Y24.511
-G1 X50.889 Y25.781
-G1 X51.524 Y25.781
-G1 X51.524 Y24.511
-G1 X50.889 Y24.511
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X51.791 Y24.511
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X51.791 Y24.511
-G1 X51.791 Y25.781
-G1 X52.426 Y25.781
-G1 X52.426 Y24.511
-G1 X51.791 Y24.511
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X52.159 Y31.725
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X52.159 Y31.725
-G1 X52.159 Y32.995
-G1 X52.794 Y32.995
-G1 X52.794 Y31.725
-G1 X52.159 Y31.725
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X53.061 Y31.725
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X53.061 Y31.725
-G1 X53.061 Y32.995
-G1 X53.696 Y32.995
-G1 X53.696 Y31.725
-G1 X53.061 Y31.725
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.926 Y12.416
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.926 Y12.416
-G1 X39.926 Y13.051
-G1 X41.196 Y13.051
-G1 X41.196 Y12.416
-G1 X39.926 Y12.416
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X39.926 Y13.317
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X39.926 Y13.317
-G1 X39.926 Y13.952
-G1 X41.196 Y13.952
-G1 X41.196 Y13.317
-G1 X39.926 Y13.317
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.665 Y12.525
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.665 Y12.525
-G1 X46.665 Y13.160
-G1 X47.935 Y13.160
-G1 X47.935 Y12.525
-G1 X46.665 Y12.525
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.665 Y13.426
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.665 Y13.426
-G1 X46.665 Y14.061
-G1 X47.935 Y14.061
-G1 X47.935 Y13.426
-G1 X46.665 Y13.426
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X20.650 Y37.871
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X20.650 Y37.871
-G1 X20.650 Y38.506
-G1 X21.920 Y38.506
-G1 X21.920 Y37.871
-G1 X20.650 Y37.871
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X20.650 Y36.970
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X20.650 Y36.970
-G1 X20.650 Y37.605
-G1 X21.920 Y37.605
-G1 X21.920 Y36.970
-G1 X20.650 Y36.970
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.546 Y37.821
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.546 Y37.821
-G1 X23.546 Y38.456
-G1 X24.816 Y38.456
-G1 X24.816 Y37.821
-G1 X23.546 Y37.821
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X23.546 Y36.919
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X23.546 Y36.919
-G1 X23.546 Y37.554
-G1 X24.816 Y37.554
-G1 X24.816 Y36.919
-G1 X23.546 Y36.919
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.187 Y37.948
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.187 Y37.948
-G1 X26.187 Y38.583
-G1 X27.457 Y38.583
-G1 X27.457 Y37.948
-G1 X26.187 Y37.948
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.187 Y37.046
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.187 Y37.046
-G1 X26.187 Y37.681
-G1 X27.457 Y37.681
-G1 X27.457 Y37.046
-G1 X26.187 Y37.046
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.778 Y37.986
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.778 Y37.986
-G1 X28.778 Y38.621
-G1 X30.048 Y38.621
-G1 X30.048 Y37.986
-G1 X28.778 Y37.986
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X28.778 Y37.087
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X28.778 Y37.087
-G1 X28.778 Y37.722
-G1 X30.048 Y37.722
-G1 X30.048 Y37.087
-G1 X28.778 Y37.087
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X53.823 Y38.265
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X53.823 Y38.265
-G1 X53.823 Y38.900
-G1 X55.093 Y38.900
-G1 X55.093 Y38.265
-G1 X53.823 Y38.265
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X53.823 Y37.366
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X53.823 Y37.366
-G1 X53.823 Y38.001
-G1 X55.093 Y38.001
-G1 X55.093 Y37.366
-G1 X53.823 Y37.366
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X48.743 Y38.265
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X48.743 Y38.265
-G1 X48.743 Y38.900
-G1 X50.013 Y38.900
-G1 X50.013 Y38.265
-G1 X48.743 Y38.265
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X48.743 Y37.366
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X48.743 Y37.366
-G1 X48.743 Y38.001
-G1 X50.013 Y38.001
-G1 X50.013 Y37.366
-G1 X48.743 Y37.366
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X51.283 Y38.265
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X51.283 Y38.265
-G1 X51.283 Y38.900
-G1 X52.553 Y38.900
-G1 X52.553 Y38.265
-G1 X51.283 Y38.265
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X51.283 Y37.366
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X51.283 Y37.366
-G1 X51.283 Y38.001
-G1 X52.553 Y38.001
-G1 X52.553 Y37.366
-G1 X51.283 Y37.366
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.203 Y38.265
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.203 Y38.265
-G1 X46.203 Y38.900
-G1 X47.473 Y38.900
-G1 X47.473 Y38.265
-G1 X46.203 Y38.265
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X46.203 Y37.366
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X46.203 Y37.366
-G1 X46.203 Y38.001
-G1 X47.473 Y38.001
-G1 X47.473 Y37.366
-G1 X46.203 Y37.366
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X27.817 Y29.576
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X27.817 Y29.576
-G1 X27.817 Y30.673
-G1 X28.012 Y30.673
-G1 X28.012 Y29.576
-G1 X27.817 Y29.576
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X26.618 Y29.576
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X26.618 Y29.576
-G1 X26.618 Y30.673
-G1 X26.814 Y30.673
-G1 X26.814 Y29.576
-G1 X26.618 Y29.576
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X25.417 Y29.576
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X25.417 Y29.576
-G1 X25.417 Y30.673
-G1 X25.612 Y30.673
-G1 X25.612 Y29.576
-G1 X25.417 Y29.576
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X31.954 Y55.179
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X31.954 Y55.179
-G1 X31.954 Y56.175
-G1 X33.151 Y56.175
-G1 X33.151 Y55.179
-G1 X31.954 Y55.179
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.755 Y55.179
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.755 Y55.179
-G1 X29.755 Y56.175
-G1 X30.951 Y56.175
-G1 X30.951 Y55.179
-G1 X29.755 Y55.179
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X29.755 Y56.779
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X29.755 Y56.779
-G1 X29.755 Y57.775
-G1 X30.951 Y57.775
-G1 X30.951 Y56.779
-G1 X29.755 Y56.779
-M42 P9 S0 ; laser off
-
-G0 F5000
-G0 X31.954 Y56.779
-M42 P9 S255 ; Laser On
-G4 P50 ; Delay in milliseconds
-G1 F50
-G1 X31.954 Y56.779
-G1 X31.954 Y57.775
-G1 X33.151 Y57.775
-G1 X33.151 Y56.779
-G1 X31.954 Y56.779
-M42 P9 S0 ; laser off
+G1 X22.048 Y26.553
+G1 X22.048 Y27.549
+G1 X23.245 Y27.549
+G1 X23.245 Y26.553
+G1 X22.048 Y26.553
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
 
 G0 F5000
 
 ; End Code 
-M42 P9 S0 ; laser off
-G28 X0 Y0; home all axes
+G4 P1 ; Pause 1ms to force movement sychronization
+M42 P31 S0 ; laser off
+M42 P9 S0 ; Un-Power Vreg
 M84 ; disable motors
