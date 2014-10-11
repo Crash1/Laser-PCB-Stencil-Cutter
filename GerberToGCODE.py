@@ -1,3 +1,7 @@
+#Known Bug
+#Marlin might have to synchronize M42. See here: https://github.com/celer/picktor/
+#G36/G37 polygon is not recognized and fails because there are no aperature sizes
+
 # This file processes gerber paste file and outputs gcode for laser cutting
 # Before using, edit 'User set variables'
 # Use http://simplegcoder.com/ to view output
@@ -8,6 +12,7 @@
 #       Uses M42 gcode so no changes are necessary in firmware
 #       Configurable Z height for homing and cutting
 #       Configurable cutting delay after laser start
+#       Separate control for Vreg power and LASER module power
 #
 #
 # Most of this code was taken from the pygerber2gcode project
