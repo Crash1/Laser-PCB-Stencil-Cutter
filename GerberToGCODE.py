@@ -113,6 +113,10 @@ def read_Gerber(filename):
 			break
 		#print "------------------"
 		#print "Procesing line: " + gerber
+		#print "g54_FLAG: " + str(g54_FLAG)
+		if (find(gerber, "G36") == 0):
+			print "ABORT: G36 polygon detected. Script cannot yet process polygons."
+			raise SystemExit
 		if (find(gerber, "%MOIN") != -1):
 			IN_INCH_FLAG = 1
 
