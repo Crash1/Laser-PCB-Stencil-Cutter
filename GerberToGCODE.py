@@ -430,8 +430,9 @@ def gcode_init():
 		gGCODE_DATA += "G21 ; set units to millimeters\n"
 
 	gGCODE_DATA += "G1 Z" + str(START_Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; Lift Z before homing XY\n"
-	gGCODE_DATA += "G28 ; home all axes\n"
-	
+	gGCODE_DATA += "G28 Y0; home only Y\n"
+	gGCODE_DATA +="G0 X50 Y50 F" + str(MOVE_SPEED) + "\n"
+	gGCODE_DATA +="G30 ;Probe Z height\n"
 	gGCODE_DATA += "G1 Z" + str(Z_HEIGHT) + " F"+ str(Z_HEIGHT_SPEED) + " ; move to cutting height\n"
 	gGCODE_DATA += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 	gGCODE_DATA += "M42 P" + str(LASER_POWER_PIN) + " S255 ; Energize Vreg\n"
@@ -445,8 +446,8 @@ def gcode_end():
 	end_data += "G4 P1 ; Pause 1ms to force movement sychronization\n"
 	end_data += "M42 P" + str(LASER_CONTROL_PIN) + " S0 ; laser off\n"
 	end_data += "M42 P" + str(LASER_POWER_PIN) + " S0 ; Un-Power Vreg\n"
-
-	end_data += "G28 ; home all axes\n"
+	end_data +="G0 X0 Y0 F" + str(MOVE_SPEED) + "\n"
+#	end_data += "G28 X0 Y0; home all axes\n"
 	end_data += "M84 ; disable motors\n"
 	
 	gGCODE_DATA += end_data
