@@ -2,6 +2,12 @@
 #Marlin might have to synchronize M42. See here: https://github.com/celer/picktor/
 #G36/G37 polygon is not recognized and fails because there are no aperature sizes
 
+#2DO:
+#Set G36_Flag - run separate parse routine
+# Append gGCODES.append(GCODE(gGERBER_TMP_X,gGERBER_TMP_Y,x,y,4,mod1,mod2))
+# Use proper type- 3 maybe
+#line2poly(x1,y1,x2,y2,mod1/2,1,8)
+
 # This file processes gerber paste file and outputs gcode for laser cutting
 # Before using, edit 'User set variables'
 # Use http://simplegcoder.com/ to view output
@@ -200,11 +206,23 @@ def parse_xy(gerber):
 
 	if (g54_FLAG):
 		parse_data(x,y,d)
-		
+	#Add G36 Flag to parse
+
+#begin shitty code
+#def parse_g36 (x,y,d):
+#        if(d == "03" or d == "3"):
+#                gGCODES.append(GCODE(x,y,0,0,2,mod1,mod2)
+#		gGERBER_TMP_X = x
+#		gGERBER_TMP_Y = y
+
+#end shitty code
+
 def parse_data(x,y,d):
 	global gDCODE, gFIG_NUM,INCH, CAD_UNIT, gGERBER_TMP_X, gGERBER_TMP_Y, gGCODES, gUNIT
+#if not G36 flag
 	mod1 = float(gDCODE[int(gFIG_NUM)].mod1) * gUNIT
 	mod2 = float(gDCODE[int(gFIG_NUM)].mod2) * gUNIT
+
 	x = float(x) * CAD_UNIT
 	y = float(y) * CAD_UNIT
 	if(d == "03" or d == "3"):
@@ -229,7 +247,7 @@ def parse_data(x,y,d):
 		gGERBER_TMP_X = x
 		gGERBER_TMP_Y = y
 
-def gerber2polygon4draw():
+def gerber2polygon4draw():      #last main routine called
 	global gGCODES
 	for gcode in gGCODES:
 		if(gcode.gtype == 5):
@@ -339,7 +357,7 @@ def circle_points(cx,cy,r,points_num):
 	points.extend([cir_x,cir_y])
 	return points
 
-def polygon2gcode(move_speed, cut_speed):
+def polygon2gcode(move_speed, cut_speed):               #called from end routing
 	global gPOLYGONS
 	print "Converting to G-code..."
 	for poly in gPOLYGONS:
