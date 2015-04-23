@@ -1,3 +1,12 @@
+# Code modified: October 2014
+# Changes:
+#       Can process large diptrace gerber files but polygons are not supported
+#       Uses M42 gcode so no changes are necessary in firmware
+#       Configurable Z height for homing and cutting
+#       Configurable cutting delay after laser start
+#       Separate control for Vreg power and LASER module power
+
+Original README.txt:
 This repository is for the PCB laser stencil cutter project posted on Hardware Breakout.
 
 http://hardwarebreakout.com/2013/03/diy-laser-cutter-for-pcb-stencils
