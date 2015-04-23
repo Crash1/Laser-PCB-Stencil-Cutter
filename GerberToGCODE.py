@@ -50,8 +50,8 @@ Z_HEIGHT_SPEED = 200
 LASER_POWER_PIN = 9
 LASER_CONTROL_PIN = 31
 ON_DELAY = 50           #millisecond
-gXSHIFT = 0
-gYSHIFT = 0
+gXSHIFT = 40
+gYSHIFT = 50
 
 
 ################################
